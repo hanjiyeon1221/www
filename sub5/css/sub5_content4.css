@@ -1,0 +1,74 @@
+/* 직무소개 내용 영역 */
+#content .title_area p{font-size: 1.2em;}
+#content .title_area .en_txt{font-family: 'Noto Sans KR', sans-serif;}
+#content .content_area section h3{font-size: 2.3em; font-weight: 700; line-height: 1em; margin-bottom: 30px;}
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p{font-size: 1.375em; margin: 30px 0 200px 0;}
+
+#content .content_area section h3{background: linear-gradient(0deg, #b1d3ff 50%, #fff 50%);
+    display: inline-block; position: relative; left: 50%; transform: translateX(-50%);
+    margin-bottom: 70px;}
+#content .content_area section{margin-bottom: 150px;}
+#content .content_area section ul{overflow: hidden; position: relative; padding: 0 10px;}
+#content .content_area section li{float: left; width: 50%; padding: 20px 30px; box-sizing: border-box;
+margin-bottom: 30px; transition: all .5s;}
+#content .content_area section dl{height: 150px;}
+#content .content_area section dt{font-size: 1.2em; color: #064f9e; margin-bottom: 15px; font-weight: 500;}
+#content .content_area section dd{line-height: 2em;}
+
+#content .content_area section div{width: 1200px; height: 300px; margin-bottom: 50px;}
+#content .content_area .welfare div{background: url(../images/content4/welfare.jpg) center no-repeat;
+    background-size: 1200px;}
+#content .content_area .training div{background: url(../images/content4/training.jpg) center no-repeat;
+    background-size: 1200px;}
+
+#content .content_area .welfare ul::before{content: ''; display: block; position: absolute; 
+    background: url(../images/content4/welfare_icon.png) center no-repeat; left: 0; top: 0px;
+    z-index: -1; width: 100%; height: 100%; opacity: .3;}
+#content .content_area .training ul::before{content: ''; display: block; position: absolute; 
+    background: url(../images/content4/training_icon.png) center no-repeat; left: 0; top: 0px;
+    z-index: -1; width: 100%; height: 100%; opacity: .3; background-size: 412px;}
+
+
+#content .content_area section li:hover{box-shadow: 3px 3px 15px rgba(6, 79, 158, .3);}
+
+
+    /* waypoint 플러그인 scroll */
+    .slogan, .welfare, .training{ visibility: hidden;}
+    .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+    .delay-02s { animation-delay: 0.2s;}
+    .delay-03s { animation-delay: 0.3s;}
+    .delay-05s { animation-delay: 0.5s;}
+    .delay-06s { animation-delay: 0.6s;}
+    .delay-08s { animation-delay: 0.8s;}
+    .delay-1s { animation-delay: 1s;}
+    
+    .animated {
+        -webkit-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+      }
+    
+    
+      @keyframes fadeInDown {
+        0% {
+          opacity: 0;
+          -webkit-transform: translateY(-70px);
+          -ms-transform: translateY(-70px);
+          transform: translateY(-70px);
+        }
+      
+        100% {
+          opacity: 1;
+          -webkit-transform: translateY(0);
+          -ms-transform: translateY(0);
+          transform: translateY(0);
+        }
+      }
+      
+      .fadeInDown {
+        -webkit-animation-name: fadeInDown;
+        animation-name: fadeInDown;
+      }

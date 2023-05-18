@@ -1,0 +1,158 @@
+/* 준법경영 내용 영역 */
+#content .title_area p{font-size: 1.5em;}
+#content .content_area section h3{font-size: 2em; font-weight: 700; line-height: 1em; margin-bottom: 30px;}
+
+
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p:nth-of-type(1){font-size: 1.375em; margin: 30px 0 100px 0;}
+#content .content_area .slogan span{background:fixed url(../images/content1/ethics.jpg) center no-repeat;
+    display: block; height: 200px; background-size: 1200px; color: #fff; font-size: 1.5em;
+    line-height: 200px; font-weight: 300; font-family: 'Roboto', sans-serif; word-spacing: .3em;}    
+#content .content_area .slogan p:nth-of-type(2){font-size: 1.2em; margin: 30px 0 100px 0; line-height: 2em;}
+
+
+
+@keyframes light{
+    from{opacity: .5;}
+    50%{background-color: #fff;}
+    to{opacity: 1;}
+}
+
+
+#content .content_area .cp h3{position: relative;}
+#content .content_area .cp h3::before{content: ''; display: block; position: absolute;
+    width: 0; height: 20px; background: #b1d3ff; left: 0; bottom: 0; z-index: -1; transition: all .5s;}
+#content .content_area .cp p{text-align: justify; line-height: 2em;}
+#content .content_area .cp div{margin-bottom: 100px;}
+#content .content_area .cp span{border: 1px solid #064f9e; padding: 10px 20px; margin-bottom: 50px;
+        display: inline-block; position: relative; left: 50.5%; transform: translateX(-50%);}
+#content .content_area .cp span::before{content: ''; display: block; position: absolute;
+    width: 875px; height: 1px; background: #064f9e; left: -344px; bottom: -22px;}
+#content .content_area .cp span::after{content: ''; display: block; position: absolute;
+    width: 10px; height: 10px; border-radius: 5px; background: #064f9e; left: 97px; bottom: -5px;
+    animation: light 1.5s ease-out infinite;}
+#content .content_area .cp ul{display: flex; justify-content: space-evenly;}
+#content .content_area .cp li{text-align: center; font-size: 1.125em; font-weight: 500;
+    padding: 10px 25px; border: 2px solid #ededed; background: #e3e9fe; position: relative;}
+#content .content_area .cp li::before{content: ''; display: block; position: absolute;
+width: 1px; height: 30px; background: #064f9e; left: 50%; top: -31px;}
+#content .content_area .cp li:nth-child(3)::before{height: 50px; top: -52px;}
+
+
+
+#content .content_area .cp:hover h3::before{width: 120px;}
+
+
+
+#content .content_area .process{padding-bottom: 200px; margin-bottom: 50px;}
+#content .content_area .process .prc{display: flex; justify-content: center; margin-top: 50px;}
+#content .content_area .process .prc>li{width: 250px; height: 250px; background: rgba(6, 79, 158, .3);
+        border-radius: 50%; text-align: center; transition: all .5s;}
+#content .content_area .process .prc1{position: relative; left: 30px;}
+#content .content_area .process .prc3{position: relative; right: 30px;}
+#content .content_area .process .prc1 dl{background: url(../images/content1/prc1_1.png)
+    50% 20% no-repeat; background-size: 40%; width: 250px; height: 250px; transition: all .5s;}
+#content .content_area .process .prc2 dl{background: url(../images/content1/prc2_1.png)
+    50% 28% no-repeat; background-size: 35%; width: 250px; height: 250px; transition: all .5s;}
+#content .content_area .process .prc3 dl{background: url(../images/content1/prc3_1.png)
+    50% 20% no-repeat; background-size: 40%; width: 250px; height: 250px; transition: all .5s;}
+#content .content_area .process .prc dt{color: #064f9e; font-family: 'Roboto', sans-serif;
+    padding-top: 150px; transition: all .5s;}
+#content .content_area .process .prc dd{font-weight: 500; margin-top: 10px; font-size: 1.1em; transition: all .5s;}
+#content .content_area .process .prc ul li{margin: 15px; position: relative; font-size: .9em;}
+#content .content_area .process .prc ul li::before{content: ''; display: block; position: absolute;
+    width: 4px; height: 4px; background: #333; border-radius: 50%; left: 20px; top: 50%;}
+
+
+/* 프로세스 hover */
+#content .content_area .process .prc>li:hover{background: #064f9e;}
+#content .content_area .process .prc1:hover dl{background-image: url(../images/content1/prc1_2.png);}
+#content .content_area .process .prc2:hover dl{background-image: url(../images/content1/prc2_2.png);}
+#content .content_area .process .prc3:hover dl{background-image: url(../images/content1/prc3_2.png);}
+#content .content_area .process .prc>li:hover dt{color: #e3e9fe;}
+#content .content_area .process .prc>li:hover dd{color: #fff;}
+
+
+
+
+
+
+
+#content .content_area .standard{margin-bottom: 100px;}
+#content .content_area .standard dl{margin-top: 50px;}
+#content .content_area .standard dt{background: #e3e9fe; padding: 10px 20px;
+    border-radius: 70px 0 70px 0; font-weight: 500; display: inline-block;}
+#content .content_area .standard dd{margin: 25px 0; border: 1px solid #eee;
+    padding: 20px; text-align: justify; transition: all .3s;}
+
+
+/* 운영기준 hover */
+#content .content_area .standard dd:hover{box-shadow: 3px 3px 15px rgba(0, 0, 0, .3);}
+
+
+
+
+
+#content .content_area .sistem{margin-bottom: 100px;}
+#content .content_area .sistem h3{position: relative;}
+#content .content_area .sistem h3::before{content: ''; display: block; position: absolute;
+    width: 0; height: 20px; background: #b1d3ff; left: 0; bottom: 0; z-index: -1; transition: all .5s;}
+#content .content_area .sistem>p{font-size: 1.125em; font-weight: 500; color: #064f9e;}
+#content .content_area .sistem ul{display: flex; justify-content: center; margin-top: 50px;
+    perspective: 300px;}
+#content .content_area .sistem li{width: 30%; height: 350px; transition: all .5s ease;}
+#content .content_area .sistem li p{text-align: justify; line-height: 2em; width: 250px;
+    padding-top: 170px; margin-left: 55px;}
+
+#content .content_area .sistem li:nth-child(1){background: url(../images/content1/employees.png)
+    50% 10% no-repeat; background-size: 30%;}
+#content .content_area .sistem li:nth-child(2){background: url(../images/content1/access.png)
+    50% 10% no-repeat; background-size: 30%;}
+#content .content_area .sistem li:nth-child(3){background: url(../images/content1/folder.png)
+    50% 10% no-repeat; background-size: 30%;}
+
+/* 시스템 hover */
+#content .content_area .sistem:hover h3::before{width: 120px;}
+#content .content_area .sistem li:hover{box-shadow: 3px 3px 15px rgba(0, 0, 0, .3);
+    transform: translateZ(10px) translateY(30px);}
+
+
+    /* waypoint 플러그인 scroll */
+.slogan, .cp, .process, .standard, .sistem{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }

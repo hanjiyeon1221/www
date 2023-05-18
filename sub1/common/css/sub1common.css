@@ -1,0 +1,38 @@
+/* sub1 depth의 공통영역 */
+.sub_visual{width: 2000px; position: relative; left: 50%; top: 0;
+    margin-left: -1000px;}
+.sub_visual h3{position: absolute; top: 220px; width: 100%; text-align: center;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: 500; font-size: 1.875em;
+    color: #fff;}
+
+
+.sub_nav{border-bottom: 1px solid #ccc;}
+.sub_nav ul{width: 820px; margin: 0 auto; overflow: hidden;}
+.sub_nav li{float: left; width: 25%; text-align: center; position: relative;}
+.sub_nav li::after{content: ''; display: block; width: 2px; height: 17px; position: absolute;
+    right: 0; top: 38px; background: #ccc;}
+.sub_nav li:last-child::after{content: ''; display: none;}
+.sub_nav li a{display: block; padding: 30px 0; font-family: 'Noto Sans KR', sans-serif; 
+    font-weight: 400; font-size: 1.25em;}
+.sub_nav li .current, .sub_nav li a:hover{color: #064f9e; font-weight: 700; position: relative;}
+.sub_nav li .current::after, .sub_nav li a:hover::after{content: ''; display: block; height: 3px; width: 100%;
+    background: #064f9e; position: absolute; bottom: 0; left: 0;}
+
+
+#content{font-family: 'Noto Sans KR', sans-serif; width: 1200px; margin: 0 auto;}
+#content .title_area{position: relative; overflow: hidden;}
+#content .title_area .line_map{position: absolute; right: 0; top: 35px; color: #666;
+    font-size: 1em;}
+#content .title_area h2{font-weight: 700; font-size: 3.438em; text-align: center; 
+    margin: 170px 0 30px; position: relative;}
+#content .title_area h2::after{content: ''; display: block; background: #064f9e;
+    width: 3px; height: 60px; position: absolute; left: 50%; margin-left: -1px;
+    bottom: -150px;}
+#content .title_area p{font-size: 1.125em; text-align: center; margin-bottom: 110px;}
+
+#content .content_area>p{font-size: 1.375em; font-weight: 500; text-align: center; line-height: 35px; 
+    margin-top: 30px;}
+#content .content_area span{color: #064f9e;}
+#content .content_area .en_txt{font-family: 'Roboto', sans-serif; font-weight: 300;
+    display: block;}
+

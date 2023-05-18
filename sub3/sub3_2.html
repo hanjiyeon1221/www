@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정도경영-품질경영</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub3common.css">
+    <link rel="stylesheet" href="./css/sub3_content2.css">
+
+    <script src="https://kit.fontawesome.com/22db827832.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <? include "../common/sub_header.html" ?>
+
+        <div class="sub_visual visual">
+            <img src="./common/images/visual.jpg" alt="">
+            <h3>정도경영</h3>
+        </div>
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub3_1.html">준법경영</a></li>
+                <li><a class="current" href="./sub3_2.html">품질경영</a></li>
+                <li><a href="./sub3_3.html">안전환경경영</a></li>
+                <li><a href="./sub3_4.html">상생협력</a></li>
+            </ul>
+        </div>
+
+        
+        <article id="content">
+
+            <div class="title_area">
+                <div class="line_map">
+                    home &gt; 정도경영 &gt; <strong>품질경영</strong>
+                </div>
+                <h2>품질경영</h2>
+                <p class="en_txt">Quality Management</p>
+            </div>
+
+            <div class="content_area">
+                <div class="slogan">
+                    <p>제품의 안전과 품질을 최우선으로 여기고<br>
+                        품질을 강화하고 있습니다.</p>
+                    <span>We continue to enhance quality management</span>
+                    <p>삼성SDI는 안전하고 친환경적인 제품을 고객에게 적기에 공급하여 가치를 창조할 수 있도록 하고<br>
+                        사회와 인류에 공헌하는 기업이 되기 위해 노력할 것입니다.</p>
+                </div>
+
+                <section class="principle">
+                    <h3>기본원칙</h3>
+                    <ul>
+                        <li>고객중심
+                            <span>Customer Focus</span>
+                        </li>
+                        <li>개선
+                            <span>Improvement</span>
+                        </li>
+                        <li>프로세스접근
+                            <span>Process Approach</span>
+                        </li>
+                        <li>리더십
+                            <span>Leadership</span>
+                        </li>
+                        <li>적극적참여
+                            <span>Participation</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="policy">
+                    <h3>품질경영 중요방침</h3>
+                    <p>고객에게 가치를 세상을 풍요롭게</p>
+                </section>
+
+                <section class="conduct">
+                    <h3>행동강령</h3>
+                    <ul>
+                       <li>
+                            <span>01</span>
+                            <dl>
+                                <dt>고객에게 가치를 제공하여 신뢰를 극대화 한다.</dt>
+                                <dd>고객의 잠재력 Needs까지 소중하게 생각하고 이를 적극 반영함으로써 고객의 가치를 높인다. 그리고 고객의 VOC를 신속, 정확, 친절하게 해결하여 신뢰와 믿음을 바탕으로 고객과의 긴밀한 협력관계를 극대화 한다.</dd>
+                            </dl>
+                       </li>
+                       <li>
+                            <span>02</span>
+                            <dl>
+                                <dt>환경과 안전을 최우선으로 한다.</dt>
+                                <dd>제품의 품질은 우리의 양심으로 결코 타협의 대상이 아니므로 우리는 국제 환경관리 규정을 준수하며, 고객의 안전을 최우선으로 하기 위해 Zero Defect의 품질 의식과 책임을 갖는다.</dd>
+                            </dl>
+                       </li>
+                       <li>
+                            <span>03</span>
+                            <dl>
+                                <dt>품질경영 시스템과 프로세스를 지속적으로 향상시킨다.</dt>
+                                <dd>우리 SDI 품질경영은 ISO 9001, IATF 16949를 기반으로 하여 개발, 제조, 품질 시스템과 8대 품질프로세스(개발관리, 신뢰성, 부품관리, 공정품질, 변경관리, 이상발생, 출하보증, VOC 관리)의 단계별 절차 및 판단기준을 명확하게 하고 지키며, 지속적으로 개선시킨다.</dd>
+                            </dl>
+                       </li>
+                    </ul>
+                </section>
+            </div>
+
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script>
+            $('.slogan').waypoint(function() {    //스크롤링시 효과가 발생할 요소의 클래스나 아이디명.
+           $('.slogan').addClass('animated fadeInDown');
+         }, {
+           offset: '70%'            //스크롤과의 거리
+         });
+       
+
+         $('.principle').waypoint(function() {
+           $('.principle').addClass('animated fadeInDown');
+         }, {
+           offset: '70%'
+         });  
+
+         $('.policy').waypoint(function() {
+           $('.policy').addClass('animated fadeInLeft');
+         }, {
+           offset: '70%'
+         });  
+
+         $('.conduct').waypoint(function() {
+           $('.conduct').addClass('animated fadeInDown');
+         }, {
+           offset: '70%'
+         });  
+
+       </script>
+
+
+</body>
+</html>

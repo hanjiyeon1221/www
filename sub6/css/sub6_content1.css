@@ -1,0 +1,43 @@
+/* 뉴스룸 내용 영역 */
+#content .title_area p{font-size: 1.2em;}
+#content .content_area section h3{font-size: 2em; font-weight: 700; line-height: 1em; margin-bottom: 30px;}
+
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p{font-size: 1.375em; margin: 30px 0 100px 0;}
+
+
+#content .content_area section{bottom: 100px;}
+
+   /* waypoint 플러그인 scroll */
+   .slogan{ visibility: hidden;}
+   .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+   
+   .animated {
+       -webkit-animation-duration: 1s;
+       animation-duration: 1s;
+       -webkit-animation-fill-mode: both;
+       animation-fill-mode: both;
+     }
+   
+   
+     @keyframes fadeInDown {
+       0% {
+         opacity: 0;
+         -webkit-transform: translateY(-70px);
+         -ms-transform: translateY(-70px);
+         transform: translateY(-70px);
+       }
+     
+       100% {
+         opacity: 1;
+         -webkit-transform: translateY(0);
+         -ms-transform: translateY(0);
+         transform: translateY(0);
+       }
+     }
+     
+     .fadeInDown {
+       -webkit-animation-name: fadeInDown;
+       animation-name: fadeInDown;
+     }

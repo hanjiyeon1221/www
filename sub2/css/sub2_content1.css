@@ -1,0 +1,261 @@
+/* 소형배터리 내용 영역 */
+#content .title_area p{font-size: 1.5em;}
+
+#content .content_area .slogan{background: #064f9e; width: 2000px; text-align: left;
+    position: relative; right: 400px; position: relative; padding: 50px; margin-top: 150px;
+    box-sizing: border-box; margin-bottom: 100px;}
+#content .content_area .slogan p{font-size: 1.2em; color: #fff;
+    line-height: 2em; margin-left: 300px;}   
+#content .content_area .slogan img{position: absolute; right: 200px; top: -50px;
+    width: 30%; transform: rotate(15deg);}
+
+#content .content_area section h3{font-size: 2.5em; font-weight: 700; line-height: 1em;}
+#content .content_area section h3 span{-webkit-text-stroke: 1px #064f9e; color: #fff;}
+#content .content_area section h4{font-size: 2.5em; font-weight: 700; line-height: 1em;
+    margin-bottom: 30px;}
+#content .content_area section h4 span{-webkit-text-stroke: 1px #064f9e; color: #fff;}
+
+#content .sbattery_good{margin-bottom: 150px;}
+#content .sbattery_good ul{display: flex; margin-top: 70px;
+    justify-content: space-between;}
+#content .sbattery_good li{perspective: 1000px;}
+#content .sbattery_good .flip{width: 250px; height: 250px; transform-style: preserve-3d;
+    transition: .5s;}
+#content .sbattery_good li dl{background: #e3e9fe;  height: 250px;
+    text-align: center; line-height: 3em; position: relative; padding-top: 60px;
+    box-sizing: border-box; transform: translateZ(125px);}
+#content .sbattery_good li dl::before{content: ''; display: block; position: absolute;
+    width: 250px; height: 3px; background: #2a3da6; left: 0; top: 0px; }
+#content .sbattery_good li dt{font-weight: 700; font-size: 1.1em; color: #2a3da6;}
+#content .sbattery_good li .flip_img{height: 250px; transform: rotateX(90deg)
+        translateZ(375px);}
+#content .sbattery_good li:nth-of-type(1) .flip_img{background: url(../images/content1/good1.jpg)
+    50% 50% no-repeat; background-size: 400px;}
+#content .sbattery_good li:nth-of-type(2) .flip_img{background: url(../images/content1/good2.jpg)
+    50% 50% no-repeat; background-size: 400px;}
+#content .sbattery_good li:nth-of-type(3) .flip_img{background: url(../images/content1/good3.jpg)
+    50% 50% no-repeat; background-size: 400px;}
+#content .sbattery_good li:nth-of-type(4) .flip_img{background: url(../images/content1/good4.jpg)
+    50% 50% no-repeat; background-size: 400px;}
+
+/* 장점 hover */
+#content .sbattery_good li:hover .flip{transform: rotateX(-90deg);}
+
+
+#content .sbattery_info{background: url(../images/content1/chart.jpg)
+       46% 150% no-repeat; height: 550px; position: relative;}
+#content .sbattery_info::before{content: ''; display: block; position: absolute; left: -100px; bottom: -250px;
+    background:url(../images/content1/bg_lithium.png) 50% 100% no-repeat; 
+    width: 100%; height: 100%;
+    /* 이미지 반전 코드 */
+    transform: rotate(90deg);
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+#content .sbattery_info div p{margin-top: 10px; width: 500px; text-align: justify;
+    line-height: 2em;}
+#content .sbattery_info .plan{position: absolute; right: 0; bottom: -150px;}
+#content .sbattery_info .plan p{width: 450px;}
+
+
+#content .sbattery_application{background: #f8f8f8; margin-top: 250px; padding: 100px 0;
+    position: relative; width: 2000px; right: 400px;}
+#content .sbattery_application h3{text-align: center;margin-bottom: 70px;}
+#content .sbattery_application>ul{display: flex; justify-content: space-around; flex-wrap: wrap;
+    width: 1200px; margin-left: 400px; position: relative;}
+#content .sbattery_application>ul .app_box{width: 380px; height: 300px; background: #064f9e;
+    margin-bottom: 20px; text-align: center; color: #fff; font-size: 1.4em; overflow: hidden;
+    padding-top: 170px; letter-spacing: 5px; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+#content .sbattery_application>ul .app_box:nth-child(1){background:#064f9e url(../images/content1/laptop.png)
+        47% 40% no-repeat;}
+#content .sbattery_application>ul .app_box:nth-child(2){background:#064f9e url(../images/content1/mobile.png)
+    47% 40% no-repeat;}
+#content .sbattery_application>ul .app_box:nth-child(3){background:#064f9e url(../images/content1/wearable.png)
+    47% 40% no-repeat;}
+#content .sbattery_application>ul .app_box:nth-child(4){background:#064f9e url(../images/content1/power.png)
+    47% 40% no-repeat;}
+#content .sbattery_application>ul .app_box:nth-child(5){background:#064f9e url(../images/content1/tool.png)
+    47% 40% no-repeat;}
+#content .sbattery_application>ul .app_box:nth-child(6){background:#064f9e url(../images/content1/bike.png)
+    47% 40% no-repeat; background-size: 27%;}
+#content .sbattery_application>ul a{color: #fff; font-size: .83em;
+ margin-top: 150px; padding: 26px 0; transition: margin-top .5s; }
+
+ /* 애플리케이션 hover */
+#content .sbattery_application .app_box:hover a{background: #fff; color: #064f9e; font-weight: 500;
+    margin-top: 30px;}
+
+
+
+
+ /* 팝업 */
+#content .sbattery_application .modal_box{position: fixed; left: 0; top: 0; z-index: 105;
+    width: 100%; height: 100%; background: rgba(0, 0, 0, .7); display: none;}
+
+#content .sbattery_application .pop_btn{position: fixed; left: 50%; top: 50%; transform: translate(-50%, -50%);
+font-size: 100px; width: 100%;  z-index: 111; display: none;}
+#content .sbattery_application .pop_btn a{position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+    color: #fff; opacity: .4; transition: all .5s;}
+#content .sbattery_application .pop_btn a:hover{opacity: .9;}
+#content .sbattery_application .pop_btn .pre{margin-left: -600px;}
+#content .sbattery_application .pop_btn .next{margin-left: 600px;}
+
+#content .sbattery_application .popup{position: fixed; top: 50%; left: 50%; 
+    transform: translate(-50%, -50%); width: 900px; height: 450px; z-index: 110;
+    background-color: white; padding: 20px; border-radius: 20px; display: none;}  /* popup 나중에 활성화 */
+#content .sbattery_application .popup img{width: 470px; float: left;}
+#content .sbattery_application .popup dl{padding-top: 20px; margin-left: 500px;}
+#content .sbattery_application .popup dt{color: #064f9e; font-size: 1.125em; font-weight: 700;}
+#content .sbattery_application .popup dd{margin-top: 10px;}
+#content .sbattery_application .popup dd span{font-weight: 500;}
+#content .sbattery_application .popup dd:nth-of-type(1){text-align: justify; line-height: 1.7em; margin-bottom: 20px;}
+#content .sbattery_application .popup dd:nth-of-type(2) ul{list-style: circle; line-height: 1.7em; margin-top: 10px; margin-left: 50px;}
+#content .sbattery_application .popup dd:nth-of-type(2)::after{content: ''; display: block; clear: both;}
+#content .sbattery_application .popup dd:nth-of-type(3){position: absolute;
+    left: 50px; bottom: 20px; width: 800px; height: 100px; background-repeat: no-repeat;
+background-position: 70% 60%; 
+border-top: 1px solid #ddd; padding-top: 30px;}
+#content .sbattery_application .popup .close_btn{position: absolute; right: 0; top: 0; padding: 20px;}
+
+
+
+
+#content .sbattery_highlight{margin: 100px 0;}
+#content .sbattery_highlight h3{text-align: center; margin-bottom: 70px;}
+#content .sbattery_highlight ul{display: flex;}
+#content .sbattery_highlight li{flex: 1; height: 300px; background: red; overflow: hidden;
+    transition: all .5s; position: relative;}
+#content .sbattery_highlight li:nth-child(1){background: url(../images/content1/highlight1.jpg) center no-repeat;}
+#content .sbattery_highlight li:nth-child(2){background: url(../images/content1/highlight2.jpg) center no-repeat;}
+#content .sbattery_highlight li dl{width: 100%; height: 100%; text-align: justify;
+    line-height: 1.5em;  padding: 30px; color: #fff;}
+#content .sbattery_highlight li dt{ opacity: 0;}
+#content .sbattery_highlight li dd{display: none;}
+#content .sbattery_highlight .border_top{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .sbattery_highlight .border_right{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .sbattery_highlight .border_bottom{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .sbattery_highlight .border_left{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+
+
+/* 하이라이트 hover */
+#content .sbattery_highlight li:hover{flex: 2; background-size: 100%;}
+#content .sbattery_highlight li:hover dl{background: rgba(255, 255, 255, .7);}
+#content .sbattery_highlight li:hover dt{font-size: 1.2em; font-weight: 700; color: #2a3da6;
+    margin: 25px 0px; opacity: 1;}
+#content .sbattery_highlight li:hover dd{display: block; width: 800px; line-height: 2em; color: #333;
+    font-weight: 500;}
+#content .sbattery_highlight li:not(:hover){flex: 0.7;}
+
+#content .sbattery_highlight li:hover .border_top{width: 100%;}
+#content .sbattery_highlight li:hover .border_right{height: 100%;}
+#content .sbattery_highlight li:hover .border_bottom{width: 100%;}
+#content .sbattery_highlight li:hover .border_left{height: 100%;}
+
+
+/* waypoint 플러그인 scroll */
+.slogan, .sbattery_good, .sbattery_info, .sbattery_application, .sbattery_highlight{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeIn, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+      z-index: 105;
+  }
+
+}
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }

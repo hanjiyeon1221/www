@@ -1,0 +1,139 @@
+/* 회사소개 내용 영역 */
+#content .content_area section h3{font-size: 2.5em; font-weight: 700; line-height: 1em;}
+#content .content_area section h3 span{font-size: 1.563rem; font-weight: 400;}
+
+#content .values{margin: 100px 0 0 80px; position: relative;}
+
+#content .values ul{font-size: 1.125em; font-weight: 500; line-height: 40px; margin-top: 30px;}
+#content .values li:nth-child(1){color: #999; font-weight: 400;}
+#content .values div{padding: 25px 0 45px 0;}
+#content .values .is_img{background: url(../images/content1/values.jpg); width: 650px; height: 347px;
+    text-indent: -9999px; overflow: hidden; position: absolute;
+    right: -90px; top: 0;}
+
+#content .ci_logo{position: relative; height: 447px; margin-top: 50px;}
+#content .ci_logo::after{content: ''; display: block; clear: both;}
+#content .ci_logo .is_img{background: url(../images/content1/ci_logo.jpg); width: 650px; height: 447px;
+    text-indent: -9999px; overflow: hidden; position: absolute; left: -90px;}
+#content .ci_logo div{float: right; margin: 25px 30px 0 30px;}
+#content .ci_logo ul{font-size: 1.125em; font-weight: 500; line-height: 2em; margin-top: 30px;
+    text-align: justify; width: 500px;}
+#content .ci_logo li:last-child{font-size: 0.688em; font-weight: 400; line-height: 1em;
+    text-align: center; display: flex; position: relative;}
+#content .ci_logo .colorchip{width: 65px; height: 65px;}
+#content .ci_logo .colorchip:nth-child(1){background: #034ea2;}
+#content .ci_logo .colorchip:nth-child(1) span{color: #034ea2;}
+#content .ci_logo .colorchip:nth-child(2){background: #0265ac;}
+#content .ci_logo .colorchip:nth-child(2) span{color: #0265ac;}
+#content .ci_logo .colorchip:nth-child(3){background: #1428a0;}
+#content .ci_logo .colorchip:nth-child(3) span{color: #1428a0;}
+#content .ci_logo .colorchip p{display: none;}
+#content .ci_logo .colorchip:nth-child(1) p{position: absolute; left: 0; top: 95px;}
+#content .ci_logo .colorchip:nth-child(2) p{position: absolute; left: 125px; top: 95px;}
+#content .ci_logo .colorchip:nth-child(3) p{position: absolute; left: 250px; top: 95px;}
+
+#content .ci_logo .colorchip:hover p{display: block;}
+
+#content .r_and_d{width: 2000px; background: #f8f8f8; position: relative;
+    left: 50%; padding: 100px 0 230px 0; margin: 130px 0 0 -1000px; }
+#content .r_and_d h3,p{text-align: center;}
+#content .r_and_d p{padding-top: 40px; font-size: 1.125em; font-weight: 500; text-align: justify; width: 820px; 
+    margin: 0 auto; line-height: 2em;}
+#content .r_and_d ul{display: flex; justify-content: center; margin-top: 100px;}
+#content .r_and_d li{position: relative; overflow: hidden; }
+#content .r_and_d ul li:nth-child(2){top: 30px;}
+#content .r_and_d ul li:nth-child(4){top: 30px;}
+#content .r_and_d dl{position: absolute; left: 0; top: 270px; 
+    background: rgba(51, 51, 51, .7); width: 365px; height: 407px; color: #fff;
+    font-size: 1em; font-weight: 500; line-height: 2em; transition: all .3s;}
+#content .r_and_d dt{font-size: 1.125em; font-weight: 700; margin-top: 45px;
+    text-align: center;}
+#content .r_and_d dt::after{content: ''; display: block; width: 300px;
+    height: 2px; background: #90c4fd; margin-left: 30px; margin-top: 20px;}
+#content .r_and_d dd{margin: 30px 30px 0 30px; text-align: justify;}
+
+
+#content .r_and_d li dl:hover{top: 0;}
+#content .r_and_d li dl:hover dt{margin-top: 185px; text-align: start; margin-left: 30px;}
+#content .r_and_d li dl:hover dt::after{margin-left: 0;}
+
+
+/* waypoint 플러그인 scroll */
+.values, .ci_logo, .r_and_d{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-03s { animation-delay: 0.3s;}
+.delay-05s { animation-delay: 0.5s;}
+.delay-1s { animation-delay: 1s;}
+.delay-15s { animation-delay: 1.5s;}
+.delay-2s { animation-delay: 2s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+      transform: translateX(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }
+

@@ -1,0 +1,80 @@
+/* 인재상 내용 영역 */
+#content .title_area p{font-size: 1.2em;}
+#content .content_area section h3{font-size: 2em; font-weight: 700; line-height: 1em; margin-bottom: 30px;}
+#content .en_txt{font-family: 'Noto Sans KR', sans-serif;}
+
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p{font-size: 1.375em; margin: 30px 0 200px 0;}
+
+#content .content_area .feature{margin-bottom: 100px;}
+#content .content_area .feature h3{background: linear-gradient(0deg, #b1d3ff 50%, #fff 50%);
+    display: inline-block; margin-left: 50%; transform: translateX(-50%);}
+
+
+@keyframes color_ch{
+    from{
+        background-color: #fff; transform: scale(0);
+    }
+    50%{background-color: #b1d3ff;}
+    to{
+        background-color: #fff; transform: scale(1);
+    }
+}
+
+#content .content_area .feature ul{overflow: hidden;}
+#content .content_area .feature li{float: left; width: 50%; padding: 200px 50px 10px 50px;
+    height: 400px; box-sizing: border-box; margin-bottom: 30px;
+    background-position: 50% 30%; background-repeat: no-repeat; position: relative;}
+#content .content_area .feature li:nth-child(1){background-image: url(../images/content1/creativity.png);}
+#content .content_area .feature li:nth-child(2){background-image: url(../images/content1/global.png);}
+#content .content_area .feature li:nth-child(3){background-image: url(../images/content1/challenge.png);}
+#content .content_area .feature li:nth-child(4){background-image: url(../images/content1/expert.png);}
+#content .content_area .feature li h4{font-size: 1.3em; color: #064f9e; text-align: center;
+    margin-bottom: 20px;}
+#content .content_area .feature li p{text-align: justify; line-height: 2em;}
+#content .content_area .feature li::before{content: ''; display: block; position: absolute;
+    width: 80%; height: 2px; background: #eee; top: 30px; left: 50%; transform: translateX(-50%);}
+#content .content_area .feature li:hover::after{content: ''; display: block; position: absolute;
+    width: 100px; height: 100px; background: #fff; border-radius: 50px; left: 50%; 
+    top: 20%; margin-left: -50px; z-index: -1; animation: color_ch 1s 1 forwards;}
+
+    /* waypoint 플러그인 scroll */
+.slogan, .feature{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-05s { animation-delay: 0.5s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+

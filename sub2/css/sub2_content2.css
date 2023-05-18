@@ -1,0 +1,355 @@
+/* 자동차배터리 내용 영역 */
+#content .title_area p{font-size: 1.5em;}
+
+#content .content_area .slogan{background: #e3e9fe; width: 2000px; text-align: left;
+    position: relative; right: 400px; position: relative; padding: 50px; margin-top: 150px;
+    box-sizing: border-box; margin-bottom: 100px;}
+#content .content_area .slogan p{font-size: 1.2em;
+    line-height: 2em; margin-left: 200px;}   
+#content .content_area .slogan img{position: absolute; right: 100px; top: -250px;
+     width: 900px; }
+
+#content .content_area section h3{font-size: 2.5em; font-weight: 700; line-height: 1em;}
+#content .content_area section h3 span{-webkit-text-stroke: 1px #064f9e; color: #fff;}
+
+
+/* 장점 영역 */
+#content .cbattery_good::before{content: ''; display: block; position: absolute;
+    left: 0; top: -100px; width: 2000px; height: 600px; background: #f8f8f8; margin-left: -400px;
+    z-index: -1;}
+#content .cbattery_good{margin-bottom: 150px; position: relative;}
+#content .cbattery_good ul{display: flex; margin-top: 70px;
+    justify-content: space-between;}
+#content .cbattery_good li{perspective: 1000px;}
+#content .cbattery_good .flip{width: 250px; height: 250px; transform-style: preserve-3d;
+    transition: .5s;}
+#content .cbattery_good li dl{background: #fff;  height: 250px;
+    text-align: center; line-height: 3em; position: relative; padding-top: 60px;
+    box-sizing: border-box; transform: translateZ(125px);}
+#content .cbattery_good li dl::before{content: ''; display: block; position: absolute;
+    width: 250px; height: 3px; background: #2a3da6; left: 0; top: 0px; }
+#content .cbattery_good li dt{font-weight: 700; font-size: 1.05em; color: #2a3da6;}
+#content .cbattery_good li .flip_img{height: 250px; transform: rotateX(90deg)
+        translateZ(375px);}
+#content .cbattery_good li:nth-of-type(1) .flip_img{background: url(../images/content2/good2_1.jpg)
+    50% 50% no-repeat; background-size: cover;}
+#content .cbattery_good li:nth-of-type(2) .flip_img{background: url(../images/content2/good2_2.jpg)
+    50% 50% no-repeat;  background-size: cover;}
+#content .cbattery_good li:nth-of-type(3) .flip_img{background: url(../images/content2/good2_3.jpg)
+    50% 50% no-repeat; background-size: cover;}
+#content .cbattery_good li:nth-of-type(4) .flip_img{background: url(../images/content2/good2_4.jpg)
+    50% 50% no-repeat; background-size: cover;}
+
+/* 장점 hover */
+#content .cbattery_good li:hover .flip{transform: rotateX(-90deg);}
+
+
+
+/* info 영역 */
+#content .carbattery_info{padding: 70px 0; position: relative;}
+#content .carbattery_info::before{content: ''; display: block; position: absolute;
+    right: -50px; bottom: 0; background: url(../images/content2/bg_automotive.png) no-repeat; 
+    width: 1200px; height: 466px; }
+#content .carbattery_info::after{content: ''; display: block; position: absolute;
+    width: 1200px; height: 3px; background: #064f9e; bottom: 0;}
+#content .carbattery_info h3{margin-bottom: 50px; font-family: 'Roboto', sans-serif;}
+#content .carbattery_info ul{text-align: justify;}
+#content .carbattery_info ul::after{content: 'Battery is the key to sustainable innovation in automobiles';
+ position: absolute; bottom: 25px; font-size: 1.2em; font-family: 'Roboto', sans-serif;
+    color: #064f9e; font-weight: 300; left: 45px;}
+#content .carbattery_info li:nth-child(1){display: flex; flex-direction: column-reverse;}
+#content .carbattery_info li:nth-child(1) p{margin: 20px 0; line-height: 2em;}
+#content .carbattery_info li:nth-child(1) p span{display: block; font-size: 1.125em;
+    font-weight: 500; position: relative;}
+#content .carbattery_info li:nth-child(1) p span::before{content: ''; display: block; position: absolute;
+left: 0; bottom: 0; width: 0px; height: 18px; background-color: #e3e9fe; z-index: -1; 
+transform: skew(-20deg); transition: width 1.5s;}
+#content .carbattery_info li:nth-child(2){display: flex; flex-direction: row-reverse;}
+#content .carbattery_info li:nth-child(2) p{line-height: 2em; padding-left: 30px; margin-bottom: 20px;
+    padding-right: 10px;}
+
+#content .carbattery_info:hover li:nth-child(1) p span::before{width: 220px;}
+
+
+
+/* Automotive application 영역 */
+
+@keyframes circle{
+    from{transform: scale(0); background-color: #e3e9fe;}
+    to{transform: scale(1);}
+}
+
+
+#content .carbattery_application{margin-top: 200px; padding-bottom: 100px;
+    position: relative; width: 2000px; right: 400px;}
+#content .carbattery_application h3{text-align: center;margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif; position: relative;}
+#content .carbattery_application h3::before{content: ''; display: block; position: absolute;
+    top: -105px; left: 50%; margin-left: -40px; width: 80px; height: 80px; background: #064f9e;
+    border-radius: 50%; animation: circle 3s infinite ease;}
+#content .carbattery_application .automotive{display: flex; justify-content: space-around; flex-wrap: wrap;
+    width: 1100px; margin-left: 450px; position: relative;}
+#content .carbattery_application .automotive::before{content: ''; display: block; position: absolute;
+    left: -45px; top: -140px; width: 650px; height: 80px; border: 2px solid #064f9e; 
+    border-radius: 200px; transform: rotate(-20deg);}
+#content .carbattery_application .automotive::after{content: ''; display: block; position: absolute;
+    right: -45px; top: -140px; width: 650px; height: 80px; border: 2px solid #064f9e; 
+    border-radius: 200px; transform: rotate(20deg);}
+#content .carbattery_application .automotive .app_box{width: 500px; height: 300px; background: #064f9e;
+    margin-bottom: 50px; text-align: center; color: #fff; font-size: 1.4em; overflow: hidden;
+     letter-spacing: 5px; box-sizing: border-box; font-family: 'Roboto', sans-serif;}
+#content .carbattery_application .automotive .app_box:nth-child(1){background:#064f9e url(../images/content2/innovation.png)
+    center no-repeat; background-size: 25%; transition: background-size .4s;}
+#content .carbattery_application .automotive .app_box:nth-child(2){background:#064f9e url(../images/content2/product.png)
+    center no-repeat; background-size: 24%; transition: background-size .4s;}
+#content .carbattery_application .automotive .app_box:nth-child(3){background:#064f9e url(../images/content2/application.png)
+    center no-repeat; background-size: 27%; transition: background-size .4s;}
+#content .carbattery_application .automotive .app_box:nth-child(4){background:#064f9e url(../images/content2/partnership.png)
+    center no-repeat; background-size: 24%; transition: background-size .4s;}
+#content .carbattery_application .automotive .app_box div{padding-top: 230px; transition: padding-top .5s;
+    margin-left: 10px;}    
+#content .carbattery_application .automotive a{color: #fff; font-size: .83em;
+ margin-top: 300px; padding: 26px 0; transition: margin-top .5s;}
+
+
+ /* 애플리케이션 hover */
+#content .carbattery_application .app_box:hover div{padding-top: 50px;} 
+#content .carbattery_application li:hover a{background: #fff; color: #064f9e; font-weight: 500;
+    margin-top: 150px;}
+#content .carbattery_application .automotive .app_box:hover:nth-child(1){background-size: 21%;}
+#content .carbattery_application .automotive .app_box:hover:nth-child(2){background-size: 20%;}
+#content .carbattery_application .automotive .app_box:hover:nth-child(3){background-size: 23%;}
+#content .carbattery_application .automotive .app_box:hover:nth-child(4){background-size: 20%;}
+
+/* 팝업 */
+#content .carbattery_application .modal_box{position: fixed; left: 0; top: 0; z-index: 105;
+    width: 100%; height: 100%; background: rgba(0, 0, 0, .7); display: none;}
+
+#content .carbattery_application .pop .popup{position: fixed; top: 50%; left: 50%;
+    transform: translate(-50%, -50%); width: 920px; z-index: 110;
+    background-color: #fff; padding: 20px 30px; display: none;}       /* popup 나중에 활성화 */
+
+    /* innovation popup*/
+#content .carbattery_application .pop .popup .innovation{text-align: justify; line-height: 1.5em;}
+#content .carbattery_application .pop .popup .innovation dt{font-size: 1.5em; font-weight: 700; color: #2a3da6;
+    margin-bottom: 20px;}
+#content .carbattery_application .pop .popup .innovation dd:nth-of-type(1){font-size: 1em;}
+#content .carbattery_application .popup .innovation dd:nth-of-type(2){font-size: .95em; color: #666;}
+#content .carbattery_application .pop .popup img{width: 920px; margin: 20px 0;}
+#content .carbattery_application .pop .popup a{position: absolute; top: 0; right: 0; padding: 20px;}
+#content .carbattery_application .pop .popup .innovation_con{font-size: .9em; margin: 0;
+   display: flex; flex-wrap: wrap; width: 920px; position: relative;
+    justify-content: space-around;}
+#content .carbattery_application .pop .popup .innovation_con::before{content: ''; display: block; position: absolute;
+    width: 950px; height: 1px; background: #ccc; top: 50%;}
+#content .carbattery_application .pop .popup .innovation_con::after{content: ''; display: block; position: absolute;
+    width: 1px; height: 360px; background: #ccc; left: 50%;}
+
+#content .carbattery_application .pop .popup .innovation_con li{width: 450px; position: relative;}
+#content .carbattery_application .pop .popup .innovation_con li dt{color: #2a3da6; 
+    margin-bottom: 10px; font-weight: 500;}
+#content .carbattery_application .pop .popup .innovation_con li dd{width: 300px; font-weight: 300; font-size: .95em;
+    text-align: justify; }
+#content .carbattery_application .pop .popup .inno_con1::after{content: ''; display: block; position: absolute;
+    right: 20px; bottom: 20px; width: 100px; height: 100px; background: #2a3da6 url(../images/content2/car_popup1_1.png) center no-repeat;
+    background-size: 60%; border-radius: 50px;}
+#content .carbattery_application .pop .popup .inno_con2::after{content: ''; display: block; position: absolute;
+    left: 20px; bottom: 20px; width: 100px; height: 100px; background: #2a3da6 url(../images/content2/car_popup1_2.png) center no-repeat;
+    background-size: 60%; border-radius: 50px;}
+#content .carbattery_application .pop .popup .inno_con3::after{content: ''; display: block; position: absolute;
+    right: 20px; top: 80px; width: 100px; height: 100px; background: #2a3da6 url(../images/content2/car_popup1_3.png) center no-repeat;
+    background-size: 60%; border-radius: 50px;}
+#content .carbattery_application .pop .popup .inno_con4::after{content: ''; display: block; position: absolute;
+    left: 20px; top: 80px; width: 100px; height: 100px; background: #2a3da6 url(../images/content2/car_popup1_4.png) center no-repeat;
+    background-size: 60%; border-radius: 50px;}
+
+#content .carbattery_application .pop .popup .inno_con2 dl{margin-left: 90px;}
+#content .carbattery_application .pop .popup .inno_con2 dd{margin-left: 60px;}
+
+#content .carbattery_application .pop .popup .inno_con3 dl{margin-top: 50px;}
+
+#content .carbattery_application .pop .popup .inno_con4 dl{margin-left: 150px; margin-top: 50px;}
+#content .carbattery_application .pop .popup .inno_con4 dt{margin-left: 35px;}
+
+
+    /* product popup */
+#content .carbattery_application .pop .popup .product{text-align: justify; line-height: 1.5em;}
+#content .carbattery_application .pop .popup .product dt{font-size: 1.5em; font-weight: 700; color: #2a3da6;
+    margin-bottom: 20px;}
+#content .carbattery_application .pop .popup .product dd:nth-of-type(1){font-size: 1em; font-weight: 500;}
+#content .carbattery_application .pop .popup .product dd:nth-of-type(2){font-size: .95em; color: #666;}
+#content .carbattery_application .pop .popup img{width: 920px; margin: 20px 0;}
+#content .carbattery_application .pop .popup a{position: absolute; top: 0; right: 0; padding: 20px;}
+
+
+#content .carbattery_application .pop .popup .product_con{font-size: .95em; line-height: 1.5em;
+    }
+#content .carbattery_application .pop .popup .product_con::before{content: ''; display: block; position: absolute;
+    right: 30px; top: 100px; width: 100%; height: 100%; background: url(../images/content2/product_popup.png) 100% 70% no-repeat;
+    z-index: -1; opacity: .5;}
+#content .carbattery_application .pop .popup .product_con li{margin-bottom: 10px;}
+#content .carbattery_application .pop .popup .product_con dt{font-weight: 500; color: #064f9e;}
+#content .carbattery_application .pop .popup .pro_con4 span{color: #333; font-weight: 500;}
+
+    /* application popup */
+#content .carbattery_application .pop .popup .application{text-align: justify; line-height: 1.5em;}
+#content .carbattery_application .pop .popup .application dt{font-size: 1.5em; font-weight: 700; color: #2a3da6;
+    margin-bottom: 20px;}
+#content .carbattery_application .pop .popup .application dd:nth-of-type(1){font-size: 1em; font-weight: 500;}
+#content .carbattery_application .pop .popup .application dd:nth-of-type(2){font-size: .95em; color: #666;}
+#content .carbattery_application .pop .popup img{width: 920px; margin: 20px 0;}
+#content .carbattery_application .pop .popup a{position: absolute; top: 0; right: 0; padding: 20px;}
+
+#content .carbattery_application .pop .popup .application_con{font-size: .95em; line-height: 1.5em;
+    }
+#content .carbattery_application .pop .popup .application_con::before{content: ''; display: block; position: absolute;
+    right: 30px; top: 100px; width: 100%; height: 100%; background: url(../images/content2/application_popup.png) 100% 70% no-repeat;
+    z-index: -1; opacity: .5;}
+#content .carbattery_application .pop .popup .application_con li{margin-bottom: 10px;}
+#content .carbattery_application .pop .popup .application_con dt{font-weight: 500; color: #064f9e;}
+#content .carbattery_application .pop .popup .app_con4 span{color: #333; font-weight: 500;}
+
+
+
+    /* partnership popup */
+#content .carbattery_application .pop .popup .partnership{text-align: justify; line-height: 1.5em;}
+#content .carbattery_application .pop .popup .partnership dt{font-size: 1.5em; font-weight: 700; color: #2a3da6;
+    margin-bottom: 20px;}
+#content .carbattery_application .pop .popup .partnership dd:nth-of-type(1){font-size: 1em; font-weight: 500;}
+#content .carbattery_application .pop .popup .partnership dd:nth-of-type(2){font-size: .95em; color: #666;}
+#content .carbattery_application .pop .popup img{width: 920px; margin: 20px 0;}
+#content .carbattery_application .pop .popup a{position: absolute; top: 0; right: 0; padding: 20px;}
+
+#content .carbattery_application .pop .popup .partnership_con{font-size: .95em; line-height: 1.5em;
+    text-align: justify;}
+#content .carbattery_application .pop .popup .partnership_con::before{content: ''; display: block; position: absolute;
+    right: 30px; top: 100px; width: 100%; height: 100%; background: url(../images/content2/partnership_popup.png) 100% 70% no-repeat;
+    z-index: -1; opacity: .5;}
+#content .carbattery_application .pop .popup .partnership_con li{margin-bottom: 10px;}
+#content .carbattery_application .pop .popup .partnership_con dt{font-weight: 500; color: #064f9e;}
+#content .carbattery_application .pop .popup .part_con3 span{color: #333; font-weight: 500;}
+#content .carbattery_application .pop .popup .part_con3 div{width: 450px; background: #e3e9fe; display: inline-block;
+     margin-top: 20px; font-size: .95em;}
+#content .carbattery_application .pop .popup .part_con3 div span{display: block; text-align: center;
+    background: #2a3da6; color: #fff; font-weight: 400; padding: 10px 0;}
+#content .carbattery_application .pop .popup .part_con3 div:last-child{margin-left: 15px;}
+
+/* 하이라이트 영역 */
+#content .carbattery_highlight{margin-bottom: 100px;}
+#content .carbattery_highlight h3{text-align: center; margin-bottom: 70px;}
+#content .carbattery_highlight ul{display: flex;}
+#content .carbattery_highlight li{flex: 1; height: 300px; background: red; overflow: hidden;
+    transition: all .5s; position: relative;}
+#content .carbattery_highlight li:nth-child(1){background: url(../images/content2/highlight1_1.jpg) center 30% no-repeat;}
+#content .carbattery_highlight li:nth-child(2){background: url(../images/content2/highlight1_2.jpg) center no-repeat;}
+#content .carbattery_highlight li dl{width: 100%; height: 100%; text-align: justify;
+    line-height: 1.5em;  padding: 30px; color: #fff;}
+#content .carbattery_highlight li dt{ opacity: 0;}
+#content .carbattery_highlight li dd{display: none;}
+#content .carbattery_highlight .border_top{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .carbattery_highlight .border_right{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .carbattery_highlight .border_bottom{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .carbattery_highlight .border_left{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+
+
+/* 하이라이트 hover */
+#content .carbattery_highlight li:hover{flex: 2; background-size: 100%;}
+#content .carbattery_highlight li:hover dl{background: rgba(255, 255, 255, .7);}
+#content .carbattery_highlight li:hover dt{font-size: 1.2em; font-weight: 700; color: #2a3da6;
+    margin: 25px 0px; opacity: 1;}
+#content .carbattery_highlight li:hover dd{display: block; width: 800px; line-height: 2em; color: #333;
+    font-weight: 500;}
+#content .carbattery_highlight li:not(:hover){flex: 0.7;}
+
+#content .carbattery_highlight li:hover .border_top{width: 100%;}
+#content .carbattery_highlight li:hover .border_right{height: 100%;}
+#content .carbattery_highlight li:hover .border_bottom{width: 100%;}
+#content .carbattery_highlight li:hover .border_left{height: 100%;}
+
+/* waypoint 플러그인 scroll */
+.slogan, .cbattery_good, .carbattery_info, .carbattery_application, .carbattery_highlight{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(100px);
+      -ms-transform: translateX(100px);
+      transform: translateX(100px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }

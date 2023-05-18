@@ -1,0 +1,271 @@
+/* ESS 내용 영역 */
+#content .title_area p{font-size: 1.5em;}
+
+#content .content_area .slogan{background: #ededed; width: 2000px; text-align: left;
+    position: relative; right: 400px; position: relative; padding: 50px; margin-top: 150px;
+    box-sizing: border-box;}
+#content .content_area .slogan p{font-size: 1.2em; font-weight: 500;
+    line-height: 2em; text-align: center;}
+#content .content_area section h3{font-size: 2.5em; font-weight: 700; line-height: 1em;}
+#content .content_area section h3 span{-webkit-text-stroke: 1px #064f9e; color: #fff;}
+
+
+
+/* info 영역 */
+@keyframes img{
+    from{transform: translateX(-1000px) rotate(0deg); opacity: 0;}
+    to{transform: translateX(0) rotate(360deg); opacity: 1;}
+}
+
+
+#content .electro_info{position: relative; background-color: #fff; padding: 100px 50px 80px 30px;}
+#content .electro_info::before{content: ''; display: block; position: absolute; z-index: -2;
+    width: 2000px; height: 850px; background-color: #ebebeb; left: -400px; top: 0px;}
+#content .electro_info h3{color: #064f9e; font-family: 'Roboto', sans-serif; width: 600px;
+    position: relative; left: 45%; margin-bottom: 30px;}
+#content .electro_info h3::before{content: ''; display: block; position: absolute;
+    width: 500px; height: 500px; background: url(../images/content4/oled.jpg) center no-repeat;
+border-radius: 250px; left: -110%; top: 10px; animation: img 3s 1 ease forwards;}
+#content .electro_info h3::after{content: ''; display: block; position: absolute; z-index: -1;
+    width: 600px; height: 600px; background: #fff; border-radius: 350px; left: -118%; top: -40px;}
+#content .electro_info dl{margin-left: 45%; text-align: justify; line-height: 2em;}
+#content .electro_info dt{font-weight: 500; font-size: 1.2em;}
+#content .electro_info dd{margin-bottom: 20px; font-size: 1.125em; position: relative;}
+#content .electro_info dd span{transition: all .5s;}
+#content .electro_info dd:nth-of-type(1)::before{content: 'EMC: 수분, 열, 충격 등 외부환경으로부터 반도체 회로를 보호하는 포장 재료';
+ display: block; position: absolute; right: 0px; top: -170px; color: #064f9e; width: 250px;
+    line-height: 1.2em; background: #e3e9fe; padding: 10px; border-radius: 6px; opacity: 0;
+    transition: opacity .5s; font-size: .8em;}
+#content .electro_info dd:nth-of-type(2)::before{content: 'SOH: 반도체 미세 패턴 구현을 위해 회로가 원하는 막질에 잘 전사되도록 도와주는 보조재';
+    display: block; position: absolute; left: -300px; bottom: -80px; color: #064f9e; width: 290px;
+       line-height: 1.2em; background: #e3e9fe; padding: 10px; border-radius: 6px; opacity: 0;
+       transition: opacity .5s; font-size: .8em;}
+#content .electro_info dd:nth-of-type(2)::after{content: 'SOD: 반도체소자 내부에서 각 영역간 또는 다른 층간을 절연하는데 사용하는 재료';
+display: block; position: absolute; left: 50px; bottom: -80px; color: #064f9e; width: 260px;
+    line-height: 1.2em; background: #e3e9fe; padding: 10px; border-radius: 6px; opacity: 0;
+    transition: opacity .5s; font-size: .8em;}
+
+
+    /* info hover */
+#content .electro_info dl:hover dd span{background-color: #e3e9fe;}
+#content .electro_info dl:hover dd::before{opacity: 1;}
+#content .electro_info dl:hover dd:nth-of-type(2)::after{opacity: 1;}
+
+
+
+/* 계획 영역 */
+#content .electro_plan{margin-top: 200px;}
+#content .electro_plan h3{margin-bottom: 30px;}
+#content .content_area .electro_plan h3 span{-webkit-text-stroke: 0; color: #2a3da6;}
+#content .electro_plan li{font-size: 1.125em; line-height: 2em; margin-bottom: 20px; text-align: justify;}
+#content .electro_plan li:nth-child(3){height: 300px; font-size: 1.1em; text-align: center; line-height: 300px;
+    background: url(../images/content4/note20.jpeg) center no-repeat fixed; color: #fff;
+    margin: 50px 0 150px -100px; font-weight: 500;}
+
+
+
+
+/* 소재 영역 */
+#content .electro_type{padding: 100px 0; position: relative; margin-top: 200px;}
+#content .electro_type::before{content: ''; display: block; position: absolute;
+    top: -224px; right: 0; width: 1200px; height: 466px;
+    background: url(../images/content4/bg_electronic.png) no-repeat;}
+#content .electro_type .type_tab{display: flex; width: 100%; margin-top: 100px;}
+#content .electro_type .type_tab li{text-align: center;
+   width: 33.33%; border: 1px solid #ededed; border-left-width: 0;}
+#content .electro_type .type_tab li:first-child{border-left-width: 1px;}
+#content .electro_type .type_tab li a{font-size: 1.2em; padding: 10px 20px; font-weight: 500;
+     letter-spacing: .2em; line-height: 38px;}
+#content .electro_type .type_tab .current{background: #e3e9fe;
+    border: 1px solid #064f9e;}
+#content .electro_type h4{font-size: 1.7em; text-align: center; color: #064f9e;}
+
+            /* 반도체 tab */
+#content .electro_type .type1{margin-top: 100px; display: none;} /* tab시 활성화 */
+#content .electro_type .type1 div{width: 100%; height: 200px; margin-top: 50px; 
+    background: url(../images/content4/type1.jpg) center no-repeat; margin-bottom: 10px;}
+#content .electro_type .type1 li{margin: 20px 0;}
+#content .electro_type .type1 dl{text-align: justify;}
+#content .electro_type .type1 dt{font-size: 1.2em; color: #064f9e;}
+#content .electro_type .type1 dd:nth-of-type(1){font-size: 1.1em; font-weight: 500; margin-bottom: 10px;}
+#content .electro_type .type1 ol{font-size: .8em; font-weight: 500; display: flex; 
+    justify-content: space-around; position: relative;}
+#content .electro_type .type1 ol::after{content: ''; display: block; position: absolute;
+    width: 100%; height: 1px; background: #eee; bottom: 0;}
+
+           
+#content .electro_type .type2{margin-top: 100px; display: none;} /* tab시 활성화 */
+#content .electro_type .type2 div{width: 100%; height: 200px; margin-top: 100px; 
+    background: url(../images/content4/type2.jpg) center no-repeat; margin-bottom: 10px;}
+#content .electro_type .type2 li{margin: 20px 0;}
+#content .electro_type .type2 dl{text-align: justify;}
+#content .electro_type .type2 dt{font-size: 1.2em; color: #064f9e;}
+#content .electro_type .type2 dd:nth-of-type(1){font-size: 1.1em; font-weight: 500; margin-bottom: 10px;}
+#content .electro_type .type2 ol{font-size: .8em; font-weight: 500; display: flex; flex-wrap: wrap;
+    justify-content: space-around; position: relative;}
+#content .electro_type .type2 ol::after{content: ''; display: block; position: absolute;
+    width: 100%; height: 1px; background: #eee; bottom: 0;}
+#content .electro_type .type2 li:nth-of-type(1) ol li:nth-child(1){display: block; height: 285px;
+    width: 100%; background: url(../images/content4/type_in1.jpg) center no-repeat; 
+    text-indent: -9999px; overflow: hidden; margin-bottom: -40px;}
+#content .electro_type .type2 li:nth-of-type(2) ol{background: url(../images/content4/type_in2.jpg) center 100%  no-repeat;
+width: 100%; height: 370px;}
+
+
+
+#content .electro_type .type3{margin-top: 100px; display: none;} /* tab시 활성화 */
+#content .electro_type .type3 div{width: 100%; height: 200px; margin-top: 100px; 
+    background: url(../images/content4/type3.jpg) center no-repeat; margin-bottom: 10px;}
+#content .electro_type .type3 li{margin: 20px 0; }
+#content .electro_type .type3 dl{text-align: justify;}
+#content .electro_type .type3 dt{font-size: 1.2em; color: #064f9e;}
+#content .electro_type .type3 dd:nth-of-type(1){font-size: 1.1em; font-weight: 500; margin-bottom: 10px;}
+#content .electro_type .type3 ol{font-size: .8em; font-weight: 500; display: flex; flex-wrap: wrap;
+    justify-content: space-around; position: relative; line-height: 2em;}
+#content .electro_type .type3 ol::after{content: ''; display: block; position: absolute;
+    width: 100%; height: 1px; background: #eee; bottom: 0;}
+#content .electro_type .type3 li:nth-of-type(1) ol li:nth-child(2){display: block; height: 300px;
+    width: 100%; background: url(../images/content4/oled_in1.jpg) center 100% no-repeat; 
+    margin-top: -10px; font-size: 1.1em; color: #064f9e;}
+#content .electro_type .type3 li:nth-of-type(2) ol li:last-child{background: url(../images/content4/oled_in2.jpg) center 100%  no-repeat;
+width: 750px; height: 380px; display: block; text-align: center; font-size: 1.2em; color: #064f9e;}
+
+
+
+
+
+/* 하이라이트 영역 */
+#content .electro_highlight{margin: 100px 0;}
+#content .electro_highlight h3{text-align: center; margin-bottom: 70px;}
+#content .electro_highlight ul{display: flex;}
+#content .electro_highlight li{flex: 1; height: 300px; background: red; overflow: hidden;
+    transition: all .5s; position: relative;}
+#content .electro_highlight li:nth-child(1){background: url(../images/content4/highlight3_1.jpg) center 30% no-repeat;}
+#content .electro_highlight li:nth-child(2){background: url(../images/content4/highlight3_2.jpg) center no-repeat;}
+#content .electro_highlight li dl{width: 100%; height: 100%; text-align: justify;
+    line-height: 1.5em;  padding: 30px; color: #fff;}
+#content .electro_highlight li dt{ opacity: 0;}
+#content .electro_highlight li dd{display: none;}
+#content .electro_highlight .border_top{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .electro_highlight .border_right{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .electro_highlight .border_bottom{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .electro_highlight .border_left{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+
+
+/* 하이라이트 hover */
+#content .electro_highlight li:hover{flex: 2; background-size: 100%;}
+#content .electro_highlight li:hover dl{background: rgba(255, 255, 255, .7);}
+#content .electro_highlight li:hover dt{font-size: 1.2em; font-weight: 700; color: #2a3da6;
+    margin: 25px 0px; opacity: 1;}
+#content .electro_highlight li:hover dd{display: block; width: 800px; line-height: 2em; color: #333;
+    font-weight: 500;}
+#content .electro_highlight li:not(:hover){flex: 0.7;}
+
+#content .electro_highlight li:hover .border_top{width: 100%;}
+#content .electro_highlight li:hover .border_right{height: 100%;}
+#content .electro_highlight li:hover .border_bottom{width: 100%;}
+#content .electro_highlight li:hover .border_left{height: 100%;}
+
+
+/* waypoint 플러그인 scroll */
+.slogan, .electro_plan, .electro_type, .electro_highlight{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+      transform: translateX(50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }

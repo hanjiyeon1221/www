@@ -1,0 +1,215 @@
+/* ESS 내용 영역 */
+#content .title_area p{font-size: 1.5em;}
+
+#content .content_area .slogan{background: #064f9e; width: 2000px; text-align: left;
+    position: relative; right: 400px; position: relative; padding: 50px; margin-top: 150px;
+    box-sizing: border-box; margin-bottom: 100px;}
+#content .content_area .slogan p{font-size: 1.2em; color: #fff;
+    line-height: 2em; text-align: center;}
+#content .content_area section h3{font-size: 2.5em; font-weight: 700; line-height: 1em;}
+#content .content_area section h3 span{-webkit-text-stroke: 1px #064f9e; color: #fff;}
+
+
+
+/* info 영역 */
+#content .ess_info{margin-bottom: 100px; position: relative;}
+#content .ess_info::before{content: ''; display: block; position: absolute; right: 0px; bottom: -200px;
+    width: 1200px; height: 466px; background: url(../images/content3/bg_ess.png) no-repeat;
+    transform: scale(1.1);}
+#content .ess_info dt{font-size: 2em; font-weight: 700; position: relative;}
+#content .ess_info dt::before{content: ''; display: block; position: absolute; left: 0; bottom: 0;
+    width: 0px; height: 15px; background-color: #e3e9fe; z-index: -1; transition: width .5s;}
+#content .ess_info dd{line-height: 2em; margin-top: 20px; text-align: justify;}
+
+#content .ess_info:hover dt::before{content: ''; width: 390px;}
+
+
+/* 이점 영역 */
+#content .ess_good ul{margin: 70px 0;}
+#content .ess_good li{border: 1px solid #064f9e; margin-top: 20px; padding: 20px; position: relative;
+    background-color: #fff; margin-left: 150px;}
+
+#content .ess_good li::after{content: ''; display: block; position: absolute; left: -50px; top: 50%;
+    transform: translateY(-50%); width: 100px; height: 100px; background: #064f9e; 
+    border-radius: 50px; z-index: -1; transition: background-color .3s;}
+#content .ess_good li:nth-child(1)::before{content: '01'; display: block; position: absolute; 
+    left: -130px; top: 50%; transform: translateY(-50%); font-size: 2.5em; font-weight: 700; color: #064f9e; transition: color .3s;}
+#content .ess_good li:nth-child(2)::before{content: '02'; display: block; position: absolute; 
+    left: -130px; top: 50%; transform: translateY(-50%); font-size: 2.5em; font-weight: 700; color: #064f9e; transition: color .3s;}
+#content .ess_good li:nth-child(3)::before{content: '03'; display: block; position: absolute; 
+    left: -130px; top: 50%; transform: translateY(-50%); font-size: 2.5em; font-weight: 700; color: #064f9e; transition: color .3s;}
+#content .ess_good li:nth-child(4)::before{content: '04'; display: block; position: absolute; 
+    left: -130px; top: 50%; transform: translateY(-50%); font-size: 2.5em; font-weight: 700; color: #064f9e; transition: color .3s;}
+#content .ess_good li:nth-child(5)::before{content: '05'; display: block; position: absolute; 
+    left: -130px; top: 50%; transform: translateY(-50%); font-size: 2.5em; font-weight: 700; color: #064f9e; transition: color .3s;}
+
+#content .ess_good li dl{font-size: 1.125em; line-height: 2em; text-align: justify;}
+#content .ess_good li dt{font-weight: 500; color: #064f9e;}
+
+
+#content .ess_good li:hover::after{background: #e3e9fe;}
+#content .ess_good li:hover:nth-child(1)::before{color: #4f84c9;}
+#content .ess_good li:hover:nth-child(2)::before{color: #4f84c9;}
+#content .ess_good li:hover:nth-child(3)::before{color: #4f84c9;}
+#content .ess_good li:hover:nth-child(4)::before{color: #4f84c9;}
+#content .ess_good li:hover:nth-child(5)::before{color: #4f84c9;}
+
+
+
+/* ESS 애플리케이션 영역 */
+
+#content .ess_application h3{text-align: center; margin-top: 100px;}
+#content .ess_application .ess_app_tab{overflow: hidden; margin-top: 100px;}
+#content .ess_application .ess_app_tab li{width: 400px; float: left; text-align: center;
+    border: 1px solid #666; box-sizing: border-box; border-right-width: 0;}
+#content .ess_application .ess_app_tab li:last-child{border-right-width: 1px;}
+#content .ess_application .ess_app_tab li a{padding: 20px 0; color: #666;}   
+#content .ess_application .ess_app_tab .current{color: #064f9e; font-weight: 700; background-color: #e3e9fe;}
+
+#content .ess_application div{margin-top: 100px; display: none;}
+#content .ess_application div h4{font-size: 1.8em;}
+#content .ess_application div p{font-size: 1.125em; color: #666;}
+#content .ess_application div p span{display: block; margin: 15px 0;}
+#content .ess_application .ess_app1 dl{text-align: justify; margin-top: 30px;}
+#content .ess_application .ess_app1 dt{text-align: center; padding: 20px; border: 1px solid #ddd;
+    font-size: 1.2em; font-weight: 500;}
+#content .ess_application .ess_app1 dd{line-height: 2em; margin: 20px 0;}
+#content .ess_application .ess_app1 .txt_hide{width: 1200px; height: 348px; overflow: hidden;
+    position: relative; top: 0; left: 0; text-indent: -9999px; 
+    background: url(../images/content3/system_technology.jpg); }
+
+
+#content .ess_application .ess_app2 ul{overflow: hidden; margin-top: 30px; position: relative;}
+#content .ess_application .ess_app2 ul::after{content: ''; display: block; position: absolute;
+    top: 50px; width: 1px; height: 650px; background: #ddd; left: 50%;}
+#content .ess_application .ess_app2 li{width: 550px; margin: 0 15px;}
+#content .ess_application .ess_app2 li:first-child{float: left;}
+#content .ess_application .ess_app2 li:last-child{float: right;}
+#content .ess_application .ess_app2 dl{text-align: justify; padding: 10px;}
+#content .ess_application .ess_app2 dt{text-align: center; padding: 15px 0; font-weight: 500;
+    font-size: 1.1em;}
+#content .ess_application .ess_app2 dd{line-height: 2em; margin-bottom: 15px;}
+#content .ess_application .ess_app2 img{width: 860px; margin-left: -180px;}
+#content .ess_application .ess_app2 li:nth-child(1) img{margin-top: 140px;}
+
+
+
+#content .ess_application .ess_app3 table{margin-top: 50px; width: 100%;}
+#content .ess_application .ess_app3 table thead{background: #ddd;}
+#content .ess_application .ess_app3 table thead tr{font-size: 1.125em; font-weight: 500;}
+#content .ess_application .ess_app3 table thead th{padding: 30px 20px; }
+#content .ess_application .ess_app3 table tbody{text-align: center;}
+#content .ess_application .ess_app3 table tbody td{padding: 20px; border-bottom: 1px solid #ddd;}
+#content .ess_application .ess_app3 table tbody tr:nth-of-type(1) .country{
+    background: url(../images/content3/uk.png) 0 50% no-repeat; background-size: 25%;}
+#content .ess_application .ess_app3 table tbody tr:nth-of-type(2) .country{
+    background: url(../images/content3/germany.png) 0 50% no-repeat; background-size: 25%;}
+#content .ess_application .ess_app3 table tbody tr:nth-of-type(3) .country{
+    background: url(../images/content3/italy.png) 0 50% no-repeat; background-size: 25%;}
+#content .ess_application .ess_app3 table tbody tr:nth-of-type(4) .country{
+    background: url(../images/content3/japan.png) 0 50% no-repeat; background-size: 25%;}
+#content .ess_application .ess_app3 table tbody tr:nth-of-type(5) .country{
+    background: url(../images/content3/australia.png) 0 50% no-repeat; background-size: 25%;}
+#content .ess_application .ess_app3 table tbody tr:nth-of-type(6) .country{
+    background: url(../images/content3/usa.png) 0 50% no-repeat; background-size: 25%;}
+
+
+/* 하이라이트 영역 */
+#content .ess_highlight{margin: 100px 0;}
+#content .ess_highlight h3{text-align: center; margin-bottom: 70px;}
+#content .ess_highlight ul{display: flex;}
+#content .ess_highlight li{flex: 1; height: 300px; background: red; overflow: hidden;
+    transition: all .5s; position: relative;}
+#content .ess_highlight li:nth-child(1){background: url(../images/content3/highlight2_1.jpg) center 30% no-repeat;}
+#content .ess_highlight li:nth-child(2){background: url(../images/content3/highlight2_2.jpg) center no-repeat;}
+#content .ess_highlight li dl{width: 100%; height: 100%; text-align: justify;
+    line-height: 1.5em;  padding: 30px; color: #fff;}
+#content .ess_highlight li dt{ opacity: 0;}
+#content .ess_highlight li dd{display: none;}
+#content .ess_highlight .border_top{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .ess_highlight .border_right{display: block; position: absolute; 
+    top: 0px; right: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .ess_highlight .border_bottom{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 0; height: 2px; background: #064f9e;
+    transition: all .3s ease-out;}
+#content .ess_highlight .border_left{display: block; position: absolute; 
+    bottom: 0px; left: 0px; width: 2px; height: 0; background: #064f9e;
+    transition: all .3s ease-out;}
+
+
+/* 하이라이트 hover */
+#content .ess_highlight li:hover{flex: 2; background-size: 100%;}
+#content .ess_highlight li:hover dl{background: rgba(255, 255, 255, .7);}
+#content .ess_highlight li:hover dt{font-size: 1.2em; font-weight: 700; color: #2a3da6;
+    margin: 25px 0px; opacity: 1;}
+#content .ess_highlight li:hover dd{display: block; width: 800px; line-height: 2em; color: #333;
+    font-weight: 500;}
+#content .ess_highlight li:not(:hover){flex: 0.7;}
+
+#content .ess_highlight li:hover .border_top{width: 100%;}
+#content .ess_highlight li:hover .border_right{height: 100%;}
+#content .ess_highlight li:hover .border_bottom{width: 100%;}
+#content .ess_highlight li:hover .border_left{height: 100%;}
+
+
+/* waypoint 플러그인 scroll */
+.slogan, .ess_info, .ess_good, .ess_application, .ess_highlight{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }

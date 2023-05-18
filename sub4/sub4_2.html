@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사회공헌-Enabling People</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub4common.css">
+    <link rel="stylesheet" href="./css/sub4_content2.css">
+
+    <script src="https://kit.fontawesome.com/22db827832.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <? include "../common/sub_header.html" ?>
+
+        <div class="sub_visual visual">
+            <img src="./common/images/visual.jpg" alt="">
+            <h3>사회공헌</h3>
+        </div>
+        <div class="sub_nav">
+            <ul>
+                <li><a href="./sub4_1.html">Enabling People</a></li>
+                <li><a class="current" href="./sub4_2.html">주요활동</a></li>
+            </ul>
+        </div>
+
+        
+        <article id="content">
+
+            <div class="title_area">
+                <div class="line_map">
+                    home &gt; 사회공헌 &gt; <strong>주요활동</strong>
+                </div>
+                <h2>주요활동</h2>
+                <p class="en_txt">Main Activity</p>
+            </div>
+
+            <div class="content_area">
+                <div class="slogan">
+                    <p>삼성SDI의 <span>사회공헌 소식들</span>을 만나보세요</p>
+                </div>
+
+                <section class="activities">
+                    <h3 class="hidden">주요활동내용</h3>
+                    <ul>
+                        <li>
+                            <img src="./images/content2/act01.jpg" alt="희망나눔 캠페인">
+                            <dl>
+                                <dt>희망나눔</dt>
+                                <dd>2008년부터 지속적으로 해 온 희망나눔 캠페인은 소외 이웃들에게 명절때마다 부식품 세트를 전달하는 봉사활동입니다. 설맞이 또는 추석맞이 나눔을 전달하고 있으며 올해도 코로나19 상황으로 대한적십자사에서 비대면으로 물품을 배송하였습니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="./images/content2/act02.jpg" alt="그리다방네모 전시회">
+                            <dl>
+                                <dt>그리다방네모 전시회</dt>
+                                <dd>'그리다방'은 그리다와 다방의 합성어로 발달장애인이 '네모' 캔버스에 그림을 그리며 다양한 사람들과 소통하는 공간이란 의미입니다. 전시회는 매년 천안 삼거리 갤러리에서 열리며 발달장애인 작가들을 위한 후원을 계속하고 있습니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="./images/content2/act03.jpg" alt="환경정화 봉사활동">
+                            <dl>
+                                <dt>봉사활동</dt>
+                                <dd>코로나19 방역 수칙을 준수하며 환경정화 봉사활동을 매년 진행합니다. 앞으로도 깨끗한 환경을 위해 환경 정화 활동을 지속적으로 실시하여 지역사회와 함께하는 삼성SDI가 되도록 노력하겠습니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="./images/content2/act04.jpg" alt="드림워킹 학교숲 조성">
+                            <dl>
+                                <dt>드림워킹 숲 조성</dt>
+                                <dd>드림워킹은 임직원의 걸음으로 기금을 조성하여 사업장 인근 초등학교에 학교숲을 선물하는 캠페인입니다. 미래의 에너지원인 아이들에게 미세먼지로부터 보호될 수 있도록 학교숲을 조성하여 선물합니다.</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <img src="./images/content2/act05.jpg" alt="헌혈 캠페인">
+                            <dl>
+                                <dt>헌혈 캠페인</dt>
+                                <dd>매월 헌혈 캠페인을 진행하여 따뜻한 나눔을 실천합니다. 한마음혈액원 헌혈 버스가 사업장에 방문하여 수혈이 필요한 환자의 생명을 살리고자 많은 임직원들이 캠페인에 동참하고 있습니다. 2021년에는 사랑나눔 현혈증서 1000매를 기증한 바 있습니다.</dd>
+                            </dl>
+                        </li>
+                    </ul>
+                </section>
+
+            </div>
+
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+
+        <script>
+            $('.slogan').waypoint(function() {    //스크롤링시 효과가 발생할 요소의 클래스나 아이디명.
+           $('.slogan').addClass('animated fadeInDown');
+         }, {
+           offset: '75%'            //스크롤과의 거리
+         });
+       
+
+         $('.activities').waypoint(function() {
+           $('.activities li:eq(0)').addClass('animated fadeInLeft delay-05s');
+           $('.activities li:eq(1)').addClass('animated fadeInRight delay-1s');
+           $('.activities li:eq(2)').addClass('animated fadeInLeft delay-15s');
+           $('.activities li:eq(3)').addClass('animated fadeInRight delay-2s');
+           $('.activities li:eq(4)').addClass('animated fadeInRight delay-25s');
+         }, {
+           offset: '70%'
+         });  
+       </script>
+
+</body>
+</html>

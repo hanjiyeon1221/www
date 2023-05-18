@@ -1,0 +1,135 @@
+/* 준법경영 내용 영역 */
+#content .title_area p{font-size: 1.5em;}
+#content .content_area section h3{font-size: 2em; font-weight: 700; line-height: 1em; margin-bottom: 30px;}
+
+
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p:nth-of-type(1){font-size: 1.375em; margin: 30px 0 100px 0;}
+#content .content_area .slogan span{background:fixed url(../images/content2/quality.jpg) 50% 90% no-repeat;
+    display: block; height: 200px; background-size: 1200px; color: #fff; font-size: 1.5em;
+    line-height: 200px; font-weight: 300; font-family: 'Roboto', sans-serif; word-spacing: .3em;}    
+#content .content_area .slogan p:nth-of-type(2){font-size: 1.2em; margin: 30px 0 100px 0; line-height: 2em;}
+
+
+
+
+@keyframes arrow{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+#content .content_area .principle{margin-bottom: 100px;}
+#content .content_area .principle h3{position: relative;}
+#content .content_area .principle h3::before{content: ''; display: block; position: absolute;
+    width: 0; height: 20px; background: #b1d3ff; left: 0; bottom: 0; z-index: -1; transition: all .5s;}
+#content .content_area .principle ul{display: flex; justify-content: space-around; padding-top: 50px;}
+#content .content_area .principle li{font-size: 1.3em; letter-spacing: .2em; text-align: center; position: relative;}
+#content .content_area .principle span{display: block; letter-spacing: 0;}
+#content .content_area .principle li::before{content: ''; display: block; position: absolute;
+    width: 100px; height: 100%; background: url(../images/content2/arrow.png) center no-repeat;
+    right: -100px; top: 0; background-size: 30%; animation: arrow 2s infinite forwards;}
+#content .content_area .principle li:nth-child(2)::before{animation-delay: .5s; }
+#content .content_area .principle li:nth-child(3)::before{animation-delay: 1s; }
+#content .content_area .principle li:nth-child(4)::before{animation-delay: 1.5s; }
+#content .content_area .principle li:nth-child(5)::before{background: none; animation-delay: 2s;}
+
+
+/* 원칙 hover */
+#content .content_area .principle:hover h3::before{width: 120px;}
+
+
+
+
+
+#content .content_area .policy{margin: 200px 0; overflow: hidden;}
+#content .content_area .policy h3{float: left; margin-top: 20px; color: #064f9e;}
+#content .content_area .policy p{font-size: 1.3em; margin-left: 200px;
+    padding: 20px 50px; display: inline-block; color: #fff; 
+    letter-spacing: .1em; position: relative; background: #064f9e;}
+#content .content_area .policy p::before{content: ''; display: block; position: absolute;
+    width: 100px; height: 2px; background: #064f9e; left: -150px; top: 50%;}
+#content .content_area .policy::after{content: ''; display: block; clear: both;}
+
+
+
+#content .content_area .conduct{background: #f8f8f8; padding: 100px 50px 50px 50px; margin-bottom: 100px;}
+#content .content_area .conduct h3{position: relative; z-index: 1;}
+#content .content_area .conduct h3::before{content: ''; display: block; position: absolute;
+    width: 0; height: 20px; background: #b1d3ff; left: 0; bottom: 0; z-index: -1; transition: all .5s;}
+#content .content_area .conduct li{margin: 50px 0; background: #fff; padding: 30px 0; transition: all .5s;}
+#content .content_area .conduct li span{float: left; height: 100px; line-height: 100px; 
+    font-size: 2.7em; padding: 0 80px 0 50px; font-weight: 700; position: relative;}
+#content .content_area .conduct li span::before{content: ''; display: block; position: absolute;
+    width: 1px; height: 100px; background: #ddd; right: 40px; top: 0;}
+#content .content_area .conduct li span::after{content: ''; display: block; position: absolute;
+    width: 10px; height: 10px; border-radius: 50%; background: #064f9e; right: 35px; top: 45px;}
+#content .content_area .conduct dl{line-height: 2em; text-align: justify;}
+#content .content_area .conduct dt{font-weight: 500; color: #064f9e;}
+#content .content_area .conduct dd{padding-right: 30px;}
+
+
+
+#content .content_area .conduct:hover h3::before{width: 120px;}
+#content .content_area .conduct li:hover{box-shadow: 5px 5px 15px rgba(0, 0, 0, .3);}
+
+
+/* waypoint 플러그인 scroll */
+.slogan, .principle, .policy, .conduct{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-04s { animation-delay: 0.4s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-70px);
+      -ms-transform: translateX(-70px);
+      transform: translateX(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }

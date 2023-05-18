@@ -1,0 +1,83 @@
+/* 오시는 길 내용 영역 */
+#content .tab_map{overflow: hidden; margin: 100px 0;}
+#content .tab_map li{width: 400px; float: left; text-align: center;
+    border: 1px solid #2a3da6; box-sizing: border-box; border-right-width: 0;}
+#content .tab_map li:last-child{float: right; border-right-width: 1px;}
+#content .tab_map li a{font-size: 1.375em; padding: 25px 0; font-weight: 500; letter-spacing: 5px;}
+#content .tab_map .current{background: #e3e9fe; color: #064f9e;}
+#content .map h3{font-size: 2em; text-align: center; margin-bottom: 50px;}
+#content .map #map_content1,.map #map_content2, .map #map_content3{
+    width: 1200px; height: 600px; margin-bottom: 70px;}
+
+#content div .location li{font-size: 1em; font-weight: 400; margin-bottom: 50px;
+    line-height: 2em; position: relative;}
+#content div .location .bus{margin-bottom: 100px;}
+#content div .location li::after{content: ''; display: block; position: absolute;
+    left: 0; top: -25px; width: 1200px; height: 1px;  background: #e3e9fe ;
+    }
+#content div .location li span{font-size: 1.25em; font-weight: 700;}
+#content div .adress{margin-bottom: 50px;}    
+#content div .adress li{font-size: 1em; margin-bottom: 0; padding-left: 35px; position: relative;}
+#content div .adress li::after{content: ''; display: none;}
+#content div .adress li:nth-child(1){background: url(../images/content4/placeholder.png)
+        0 50% no-repeat; background-size: 20px;}
+#content div .adress li:nth-child(2){background: url(../images/content4/telephone.png)
+    0 50% no-repeat; background-size: 20px;}
+#content div .subway p{position: relative; left: 70px; margin-top: 15px;}    
+#content div .subway p::before{content: '수인분당'; display: inline-block; position: absolute;
+    top: 0; left: -70px; background: rgba(255, 230, 0, 1); border-radius: 50%;
+    font-size: .5em; padding: 3px; color: #fff; width: 37px; height: 37px; line-height: 37px;}
+#content div .bus p{position: relative; left: 70px; margin-top: 15px;}    
+#content div .bus p:nth-of-type(1)::before{content: '탑승'; display: inline-block; position: absolute;
+    top: 0; left: -70px; background: #ededed; border-radius: 5px;
+    font-size: 0.8em; font-weight: 300; padding: 0 10px; line-height: 32px;}
+#content div .bus p:nth-of-type(2)::before{content: '마을'; display: inline-block; position: absolute;
+    top: 0; left: -70px; background: #4AB44A; border-radius: 5px;
+    font-size: 0.8em; font-weight: 300; padding: 0 10px; color: #fff; line-height: 32px;}
+#content .map2 .subway p::before{content:'1'; width: 30px; height: 30px; font-size: 0.8em;
+    text-align: center; background: #2A1F9C; line-height: 30px;}
+#content .map2 .bus p:nth-of-type(2)::before{content: '일반'; background: #1B95A8;}
+#content .map3 .subway p::before{content: '무궁화'; text-align: center; background: #FF6600;
+    border-radius: 5px; padding: 0 5px; font-size: 0.8em; font-weight: 300; line-height: 37px;}
+
+
+    /* waypoint 플러그인 scroll */
+.tab_map, .maps{ visibility: hidden;}
+.fadeIn, .fadeInDown{ visibility: visible; }
+.delay-03s { animation-delay: 0.3s;}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .fadeIn {
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    animation-name: fadeInDown;
+  }

@@ -1,0 +1,66 @@
+/* 미디어센터 내용 영역 */
+#content .title_area p{font-size: 1.2em;}
+#content .content_area section h3{font-size: 2em; font-weight: 700; line-height: 1em; margin-bottom: 30px;}
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p{font-size: 1.375em; margin: 30px 0 200px 0;}
+
+#content .sdi_faq{margin-bottom: 100px;}
+#content .sdi_faq::after{content: ''; display: block; clear: both;}
+
+#content .sdi_faq>p{line-height: 1.8em; color: #666;}
+
+#content .sdi_faq span{float: right; position:relative; margin:0 0 10px 0; background:#064f9e;}
+#content .sdi_faq span::before{content: ''; display: block; position: absolute; left: 0; top: 0;
+ width: 0; height: 100%; background: #7cb5ff; transition: width .3s;}
+#content .sdi_faq span:hover::before{width: 100%;}
+#content .sdi_faq span .all{position:relative; width: 200px; height: 50px; font-size: 1.12em;
+    line-height: 50px; background: url("http://cjstkapfhddl.cafe24.com/sub6/images/content3/arrow_down.png") 90% 50% no-repeat;
+    color: #fff; z-index: 3; padding: 0 0 0 20px; float: right;}
+
+#content .sdi_faq ul{float: left; width: 100%; border-top: 2px solid #333; margin-top: 30px;
+    font-size: 1.2em;}
+#content .sdi_faq ul li{border-bottom: 1px solid #ebebeb;}
+#content .sdi_faq ul li p{text-align: justify; padding-left: 120px; position: relative;}
+#content .sdi_faq ul li p::before{content: 'Q'; position: absolute; left: 60px; top: 25px;
+    font-size: 1.5em; font-weight: 700; color: #064f9e;}
+#content .sdi_faq ul li p:nth-child(1) a{padding: 30px 120px 30px 30px; font-size: 1.2rem;
+    background: url(../images/content3/arrow_down2.png) 95% 50% no-repeat;
+    background-size: 15px;}
+#content .sdi_faq ul li p:nth-child(2){padding: 30px 120px 30px 150px; border: 1px dotted #eee;
+    background: rgba(227, 233, 254, .5); line-height: 2em; font-size: 1.1rem; display: none;}
+#content .sdi_faq ul li p:nth-child(2)::before{content: 'A'; color: #999;}
+
+
+/* waypoint 플러그인 scroll */
+.slogan{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }

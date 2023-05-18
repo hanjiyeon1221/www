@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>고객지원-FAQ</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="./common/css/sub6common.css">
+    <link rel="stylesheet" href="./css/sub6_content3.css">
+
+    <script src="https://kit.fontawesome.com/22db827832.js" crossorigin="anonymous"></script>
+</head>
+<body>
+        <? include "../common/sub_header.html" ?>
+
+        <div class="sub_visual visual">
+            <img src="./common/images/visual.jpg" alt="">
+            <h3>고객지원</h3>
+        </div>
+        <div class="sub_nav">
+            <ul>
+                <li><a href="https://cjstkapfhddl.cafe24.com/gb/bbs/board.php?bo_table=notice">뉴스룸</a></li>
+                <li><a href="https://cjstkapfhddl.cafe24.com/gb/bbs/board.php?bo_table=gallery">미디어센터</a></li>
+                <li><a class="current" href="./sub6_3.html">FAQ</a></li>
+                <li><a href="./sub6_4.html">문의하기</a></li>
+            </ul>
+        </div>
+
+        
+        <article id="content">
+
+            <div class="title_area">
+                <div class="line_map">
+                    home &gt; 고객지원 &gt; <strong>FAQ</strong>
+                </div>
+                <h2>FAQ</h2>
+                <p class="en_txt">Frequently Asked Questions</p>
+            </div>
+
+            <div class="content_area">
+                <div class="slogan">
+                    <p>삼성SDI의 채용관련 <span>자주묻는질문</span> 입니다.</p>
+                </div>
+
+                <section class="sdi_faq">
+                    <!-- json 데이터 -->
+                </section>
+            </div>
+        </article>
+
+        <? include "../common/sub_footer.html" ?>
+        <script src="./js/faq.js"></script>
+
+        <script>
+            $('.slogan').waypoint(function() {    //스크롤링시 효과가 발생할 요소의 클래스나 아이디명.
+           $('.slogan').addClass('animated fadeInDown');
+         }, {
+           offset: '75%'            //스크롤과의 거리
+         });
+        
+        </script>
+
+</body>
+</html>

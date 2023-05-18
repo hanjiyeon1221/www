@@ -1,0 +1,112 @@
+/* Enabling People 내용 영역 */
+#content .title_area p{font-size: 1.5em;}
+#content .content_area section h3{font-size: 2em; font-weight: 700; line-height: 1em; 
+    margin-bottom: 30px; text-align: center;}
+
+
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p{font-size: 1.375em; font-weight: 500; text-align: center; 
+    line-height: 35px; margin: 30px 0 100px 0;}
+#content .content_area .slogan p span{color: #064f9e;}
+
+
+#content .content_area .direction h3{margin-bottom: 50px; position: relative;}
+#content .content_area .direction h3::before{content: ''; display: block; position: absolute;
+    width: 100%; height: 200px; left: 0; bottom: -230px; background: url(../images/content1/with_heart.jpg) 
+    center no-repeat; background-size: 30%; z-index: -1; opacity: .6;}
+#content .content_area .direction p{text-align: center; width: 800px; line-height: 2em;
+    margin-left: 200px; margin-bottom: 20px;}
+#content .content_area .direction div{margin: 100px 0; background: #e3e9fe; padding: 100px 0 200px 0;
+    width: 2000px; position: relative; margin-left: -400px;}
+#content .content_area .direction div img{margin-left: 50%; transform: translateX(-50%);}
+#content .content_area .direction div .ep_info{position: absolute;
+    left: 50%; top: 60%; transform: translateX(-50%);}
+#content .content_area .direction .ep_info>li{width: 300px; height: 300px; float: left;
+    border-radius: 150px 150px 0 0; margin: 0 10px; transition: all .5s;}
+#content .content_area .direction .ep_info>li:nth-of-type(1){background: #064f9e 
+    url(../images/content1/homework.png) 50% 20% no-repeat; position: relative;}
+#content .content_area .direction .ep_info>li:nth-of-type(2){background: #064f9e 
+    url(../images/content1/receive.png) 50% 20% no-repeat; position: relative;}
+#content .content_area .direction .ep_info>li:nth-of-type(1)::after{content: ''; display: block;
+position: absolute; background: url(../images/content1/hand_left.png)  center no-repeat;
+left: 10%; bottom: -260px; width: 100%; height: 100%; background-size: 70%;}
+#content .content_area .direction .ep_info>li:nth-of-type(2)::after{content: ''; display: block;
+    position: absolute; background: url(../images/content1/hand_right.png)  center no-repeat;
+    left: -10%; bottom: -260px; width: 100%; height: 100%; background-size: 70%;}
+#content .content_area .direction .ep_info h4{text-align: center; color: #fff; font-size: 1.125em;
+    margin-top: 130px;}
+#content .content_area .direction .ep_info ul li{text-align: center; font-size: .9em;
+    margin-top: 20px; color: #e3e9fe;}
+#content .content_area .direction .ep_info li:nth-of-type(1) ul li{width: 50%; float: left;}
+
+
+#content .content_area .direction .ep_info>li:hover{transform: translateY(-50px);}
+
+
+#content .content_area .education{margin-top: 450px;}
+#content .content_area .education ul{margin: 100px 0; overflow: hidden;}
+#content .content_area .education ul li{width: 600px;float: left; margin-bottom: 50px;}
+#content .content_area .education ul li img{transition: all .3s;}
+#content .content_area .education ul li dl{margin: 20px 0;}
+#content .content_area .education ul li dt{font-size: 1.125em; font-weight: 500; color: #064f9e;
+    margin-bottom: 10px;}
+#content .content_area .education ul li dd{text-align: justify; width: 570px; line-height: 2em; height: 100px;}
+#content .content_area .education ul li a{border: 1px solid #064f9e; display: inline;
+    padding: 10px 20px; border-radius: 30px; line-height: 27px; transition: all .3s;}
+
+#content .content_area .education ul li a:hover{background: #064f9e; color: #fff;}
+#content .content_area .education ul li:hover img{transform: scale(1.05);}
+
+
+
+#content .content_area .win_win{padding-bottom: 100px; text-align: center;}
+#content .content_area .win_win h3{margin-bottom: 50px;}
+#content .content_area .win_win dl{background-color: #e3e9fe;  border-radius: 50px; padding: 20px; position: relative;}
+#content .content_area .win_win dl::before{content: ''; display: block; position: absolute ; right: -770px; top: 0; opacity: .5;
+    width: 100%; height: 100%; background: url(../images/content1/ep_logo2.png) 10% 40% no-repeat;}
+#content .content_area .win_win dt{font-size: 1.3em; font-weight: 300; margin-bottom: 10px;}
+#content .content_area .win_win dd{font-weight: 500; color: #064f9e; margin-bottom: 20px;}
+
+
+
+/* waypoint 플러그인 scroll */
+.slogan, .direction, .education, .win_win{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+.delay-02s { animation-delay: 0.2s;}
+.delay-03s { animation-delay: 0.3s;}
+.delay-05s { animation-delay: 0.5s;}
+.delay-06s { animation-delay: 0.6s;}
+.delay-08s { animation-delay: 0.8s;}
+.delay-1s { animation-delay: 1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+
+

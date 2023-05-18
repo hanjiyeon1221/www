@@ -1,0 +1,123 @@
+/* 직무소개 내용 영역 */
+#content .title_area p{font-size: 1.2em;}
+#content .title_area .en_txt{font-family: 'Noto Sans KR', sans-serif;}
+#content .content_area section h3{font-size: 2.3em; font-weight: 700; line-height: 1em; margin-bottom: 30px;}
+
+#content .content_area .slogan{text-align: center;}
+#content .content_area .slogan p{font-size: 1.375em; margin: 30px 0 200px 0;}
+
+
+#content .content_area .jobs{padding-bottom: 100px;}
+#content .content_area .jobs li{margin-bottom: 150px; position: relative;}
+#content .content_area .jobs li::before{content: ''; display: block; position: absolute;
+    width: 2000px; height: 330px; background: #ebebeb; top: 30px; z-index: -1;
+    left: -400px;}
+#content .content_area .jobs li::after{content: ''; display: block; clear: both;}
+#content .content_area .jobs li:nth-child(odd) img{float: left; width: 50%;}
+#content .content_area .jobs li:nth-child(even) img{float: right; width: 50%;}
+#content .content_area .jobs li:nth-child(even) dl{float: left; width: 50%;}
+#content .content_area .jobs li:nth-child(odd) dl{float: right; width: 50%;}
+#content .content_area .jobs li img{border-radius: 50px 0 50px 0; 
+    box-shadow: 5px 5px 15px 2px rgba(0, 0, 0, .3); transition: all .5s;}
+#content .content_area .jobs li dl{ padding: 80px 50px 0 50px; box-sizing: border-box;}
+#content .content_area .jobs li dt{font-size: 1.3em; margin-bottom: 30px; font-weight: 500; color: #064f9e;}
+#content .content_area .jobs li dd{font-size: 1.125em; line-height: 2em; margin-bottom: 20px;}
+#content .content_area .jobs li dd:last-child{color: #666;}
+
+#content .content_area .jobs li:hover img{transform: scale(1.05);}
+
+
+#content .content_area .requirements{margin-bottom: 200px;}
+#content .content_area .requirements table{width: 100%; text-align: center;}
+#content .content_area .requirements h3{margin-bottom: 70px; text-align: center;}
+#content .content_area .requirements thead{background: #ebebeb;}
+#content .content_area .requirements tr{transition: all .5s;}
+#content .content_area .requirements th{font-size: 1.125em; padding: 15px 0;}
+#content .content_area .requirements td{line-height: 2em; padding: 20px 0;
+    border-bottom: 1px solid #eee;}
+#content .content_area .requirements td:nth-child(1){font-weight: 500;
+    border-right: 1px solid #eee;}
+
+
+#content .content_area .requirements tr:hover{background-color: #666; color: #fff;}
+
+
+/* waypoint 플러그인 scroll */
+.slogan, .jobs, .requirements{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight, .fadeIn{ visibility: visible; }
+.delay-05s { animation-delay: 0.5s;}
+.delay-09s { animation-delay: 0.9s;}
+.delay-13s { animation-delay: 1.3s;}
+.delay-17s { animation-delay: 1.7s;}
+.delay-21s { animation-delay: 2.1s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-70px);
+      -ms-transform: translateX(-70px);
+      transform: translateX(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(70px);
+      -ms-transform: translateX(70px);
+      transform: translateX(70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+  }

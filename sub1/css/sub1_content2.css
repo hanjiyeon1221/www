@@ -1,0 +1,93 @@
+/* CEO 인사말 내용 영역 */
+#content .hello div:nth-child(1){background: #e3e9fe; width: 2000px; position: relative;
+    left: 50%; padding: 100px 0; margin: 100px 0 70px -1000px;}
+#content .hello div:nth-child(1) h3{position: absolute; text-indent: -9999px; overflow: hidden;}
+#content .hello div:nth-child(1) img{position: absolute; left: 390px; bottom: -31px; transform: scale(1.13);}
+
+#content .hello .hello_txt{width: 650px; margin-left: 48%; margin-top: 30px;}
+#content .hello .hello_txt p{font-size: 1.125em; font-weight: 500; text-align: justify; line-height: 2em; margin-bottom: 10px;}
+#content .hello .hello_txt p:last-child{background: url(../images/content2/ceo_name.png) 180px no-repeat;
+    line-height: 1.5em; margin-top: 40px;}
+
+#content .profile{background: #4f84c9; width: 1040px; height: 515px; position: relative; 
+        right: 50%; margin: 0 0 100px 200px; border-radius: 0 250px 0 0; padding-left: 400px; 
+         color: #fff; padding-top: 25px;} 
+#content .profile h3{font-size: 1.563em; font-weight: 400; margin-left: 200px; opacity: 0; transition: all .3s;}
+#content .profile .profile_txt{margin-top: 50px; position: relative;}
+#content .profile .profile_txt::before{content: ''; display: block; position: absolute; left: -165px; top: -42px;
+    width: 75px; height: 85px; background: url(../images/content2/profile.png) no-repeat; background-size: 100%;}
+#content .profile .profile_txt::after{content: ''; display: block; position: absolute; width: 2px; height: 420px;
+    background: #fff; top: -50px; left: -45px;}
+#content .profile .profile_txt dl:first-child{margin-bottom: 35px; display: flex; align-items: center;}
+#content .profile .profile_txt dt{font-size: 1.563em; font-weight: 700; margin-right: 140px;}
+#content .profile .profile_txt dd{font-size: 1.125em; font-weight: 400;}
+#content .profile .profile_txt dd span{font-size: 1.125rem; color: #fff; font-weight: 400;
+    margin-right: 40px;}
+#content .profile .profile_txt dl:last-child{width: 1000px; overflow: hidden;}
+#content .profile .profile_txt dl:last-child dt{margin-bottom: 30px;}
+#content .profile .profile_txt dl:last-child p{margin-bottom: 25px;}
+#content .profile .profile_txt dl:last-child dd:nth-of-type(1){float: left;}
+#content .profile .profile_txt dl:last-child dd:nth-of-type(2){float: right;}
+#content .profile .profile_txt dl:last-child dd:nth-of-type(1) p:nth-child(1) span{margin-right: 70px;}
+
+
+#content .profile:hover h3{opacity: 1;}
+
+
+/* waypoint 플러그인 scroll */
+.hello_box, .profile{ visibility: hidden;}
+.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-03s { animation-delay: 0.3s;}
+.delay-05s { animation-delay: 0.5s;}
+.delay-1s { animation-delay: 1s;}
+.delay-15s { animation-delay: 1.5s;}
+.delay-2s { animation-delay: 2s;}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-70px);
+      -ms-transform: translateY(-70px);
+      transform: translateY(-70px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+  }
+  
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+  }
+
+  @keyframes fadeInLeft {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateX(-50px);
+      -ms-transform: translateX(-50px);
+      transform: translateX(-50px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+    }
+  }
+  
+  .fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+  }
