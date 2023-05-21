@@ -1,9 +1,9 @@
 var smh= $('.main_visual').height();  //메인 비주얼의 높이
-var h0= $('#content section:eq(0)').offset().top-600 ;
-var h1= $('#content section:eq(1)').offset().top-600 ;
-var h2= $('#content section:eq(2)').offset().top-600 ;
-var h3= $('#content section:eq(3)').offset().top-600 ;
-var h4= $('#content section:eq(4)').offset().top-600 ;
+var h0= $('#content section:eq(0)').offset().top-1000;
+var h1= $('#content section:eq(1)').offset().top-1000;
+var h2= $('#content section:eq(2)').offset().top-1000;
+var h3= $('#content section:eq(3)').offset().top-1000;
+var h4= $('#content section:eq(4)').offset().top-1000;
 
 //스크롤 이벤트
 $(window).on('scroll',function(){
