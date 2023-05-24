@@ -1,5 +1,5 @@
 var smh= $('.main_visual').height();  //메인 비주얼의 높이
-var h0= $('#content section:eq(0)').offset().top-1000;
+var h0= $('#content section:eq(0)').offset().top-1000;  //해당 섹션 top 좌표값 -1000
 var h1= $('#content section:eq(1)').offset().top-1000;
 var h2= $('#content section:eq(2)').offset().top-1000;
 var h3= $('#content section:eq(3)').offset().top-1000;
@@ -13,7 +13,7 @@ var scroll = $(window).scrollTop();  //스크롤top의 좌표를 담는다
 //스크롤 좌표의 값을 찍는다.
 
 
-    //스크롤의 거리의 범위를 처리
+//스크롤의 거리의 범위를 처리
 if(scroll>=h0 && scroll<h1){
 
     $('#content>section:eq(0)').addClass('boxMove1');

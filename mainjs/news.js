@@ -4,23 +4,21 @@ var position=0;  //최초위치
     // console.log(movesize);
     var timeonoff2;
    
-    $('.news_box_wrap ul').after($('.news_box_wrap ul').clone());
+    $('.news_box_wrap ul').after($('.news_box_wrap ul').clone());  //갤러리 복제
  
     function moveG() {
-        position-=movesize;  // 352씩 감소
+        position-=movesize;  // 352씩 감소(이미지 너비 + 마진right값/2)
         $('.news_box_wrap').animate({left:position}, 'fast',  //콜백으로 행동넣어줘야 애니메이션 동작 후에 행동이 정상 작동된다. 
             function(){							              //좌표를 콜백함수로 넣어줌↑
-            if(position<=-1364){
-                $('.news_box_wrap').css('left',0);
-                position=0;
+            if(position<=-1364){  //이미지 4개의 너비,이하만큼 이동
+                $('.news_box_wrap').css('left',0);   //다시 원래의 위치 0으로
+                position=0;   //최초위치
             }
         }).clearQueue();
     }
 
      timeonoff2= setInterval(moveG, 3000);
   
-    
-        //슬라이드 겔러리를 한번 복제
  
   $('.news_btn').click(function(e){
      e.preventDefault();

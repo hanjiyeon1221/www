@@ -1,4 +1,4 @@
-var timeonoff;   //타이머 처리  홍길동 정보
+var timeonoff;   //타이머 처리
 var imageCount=$('.gallery li').size();   //이미지 총개수
 var v_cnt=1;   //이미지 순서 1 2 3 4 5 1 2 3 4 5....
 var onoff=true; // true: 타이머 동작, false: 타이머 중지
@@ -26,20 +26,20 @@ function moveg(){
     //      $('.btn'+i).css('width','16'); // 버튼 원래의 너비
     //   }
     
-    $('.mbutton').removeClass('on'); //버튼 비활설
-    $('.mbutton').css('width','100px'); // 버튼 원래의 너비
-    $('.btn'+v_cnt).addClass('on');   //자신만 불켜
-    $('.btn'+v_cnt).css('width','150px');   
+    $('.mbutton').removeClass('on'); //모든 버튼 비활성
+    $('.mbutton').css('width','100px'); // 모든 버튼 원래의 너비
+    $('.btn'+v_cnt).addClass('on');   //자신만 활성
+    $('.btn'+v_cnt).css('width','150px');   //활성화된 버튼의 너비만
     // $('.dock span:eq('+v_cnt-1+')')css('속성','값');  
 
-     if(v_cnt==imageCount)v_cnt=0;  //카운트의 초기화 0
+     if(v_cnt==imageCount)v_cnt=0;  //카운트 초기화 0
 }
 
 
-timeonoff= setInterval( moveg , 5000);// 타이머를 동작 1~5이미지를 순서대로 자동 처리
+timeonoff= setInterval( moveg , 5000);// 타이머를 동작, 1~5이미지를 순서대로 자동 처리
 
-//var 변수 = setInterval( function(){처리코드} , 4000);  //홍길동의 정보를 담아놓는다
-//clearInterval(변수); -> 살인마/사이코패스/살인청부업자
+//var 변수 = setInterval( function(){처리코드} , 4000);  //변수에 정보 담아두기
+//clearInterval(변수); -> setInterval 중지
 
 
 
@@ -48,37 +48,37 @@ $('.mbutton').click(function(event){  //각각의 버튼 클릭시
   clearInterval(timeonoff); //타이머 중지     
 
  //  for(var i=1;i<=imageCount;i++){
- //      $('.gallery .link'+i).hide(); //모든 이미지 안보인다.
+ //      $('.gallery .link'+i).hide(); //모든 이미지 안보이게
  //    } 
 
- $('.gallery li').hide(); //모든 이미지 안보인다.
+ $('.gallery li').hide(); //모든 이미지 안보이게
 
  if($target.is('.btn1')){  //첫번째 버튼 클릭
-    v_cnt=1;  //클릭한 해당 카운트를 담아놓는다
+    v_cnt=1;  //클릭한 해당 카운트를 담아두기
  }else if($target.is('.btn2')){  
     v_cnt=2; 
  }else if($target.is('.btn3')){ 
     v_cnt=3; 
  }
 
- $('.gallery .link'+v_cnt).fadeIn('slow');  //자기 자신만 이미지가 보인다
+ $('.gallery .link'+v_cnt).fadeIn('slow');  //자기 자신만 이미지가 보이게
  
  // for(var i=1;i<=imageCount;i++){
- //   $('.btn'+i).css('background','#00f'); //버튼 모두불꺼
+ //   $('.btn'+i).css('background','#00f'); //버튼 모두 비활성
  //   $('.btn'+i).css('width','16');
  // }
 
- $('.mbutton').removeClass('on'); //버튼 모두불꺼
+ $('.mbutton').removeClass('on'); //버튼 모두 비활성
  $('.mbutton').css('width','100px');
  $('.btn'+v_cnt).addClass('on'); 
- $('.btn'+v_cnt).css('width','150px'); //자신 버튼만 불켜 
+ $('.btn'+v_cnt).css('width','150px'); //자신 버튼만 활성
  
  if(v_cnt==imageCount)v_cnt=0;  //카운트 초기화
 
- timeonoff= setInterval( moveg , 5000); //타이머의 부활!!!
+ timeonoff= setInterval( moveg , 5000); //타이머 부활
 
- if(onoff==false){ //중지상태냐??
-       onoff=true; //동작~~
+ if(onoff==false){ //타이머가 중지상태라면
+       onoff=true; //타이머 동작
        $('.ps').css('background-image','url(./images/stop.png)');
  }
  
@@ -87,13 +87,13 @@ $('.mbutton').click(function(event){  //각각의 버튼 클릭시
 //stop/play 버튼 클릭시 타이머 동작/중지
   $('.ps').click(function(){ 
   if(onoff==true){ // 타이머가 동작 중이면,
-      clearInterval(timeonoff);   //살인마 고용 stop버튼 클릭시
+      clearInterval(timeonoff);   //타이머 강제 중지
       $(this).css('background-image','url(./images/play.png)');
-      onoff=false;   
-  }else{  // false 타이머가 중지 상태냐??
-    timeonoff= setInterval( moveg , 5000); //play버튼 클릭시  부활
+      onoff=false;  //타이머 중지
+  }else{  // false 타이머가 중지상태면,
+    timeonoff= setInterval( moveg , 5000); //타이머 재동작, play버튼 클릭시 부활
     $(this).css('background-image','url(./images/stop.png)');
-    onoff=true; 
+    onoff=true; //타이머 동작
   }
 });	
 
