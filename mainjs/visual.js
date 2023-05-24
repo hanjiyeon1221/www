@@ -22,11 +22,11 @@ function moveg(){
     // $('.gallery li:eq('+v_cnt-1+')').fadeIn('slow');                    
 
     //  for(var i=1;i<=imageCount;i++){
-    //       $('.btn'+i).css('background','#00f'); //버튼불다꺼!!
+    //       $('.btn'+i).css('background','#00f'); //버튼 색 비활성
     //      $('.btn'+i).css('width','16'); // 버튼 원래의 너비
     //   }
     
-    $('.mbutton').removeClass('on'); //버튼불다꺼!!
+    $('.mbutton').removeClass('on'); //버튼 비활설
     $('.mbutton').css('width','100px'); // 버튼 원래의 너비
     $('.btn'+v_cnt).addClass('on');   //자신만 불켜
     $('.btn'+v_cnt).css('width','150px');   
